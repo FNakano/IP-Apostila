@@ -1,6 +1,8 @@
 # IP-Apostila
 Apostila de FNakano para IP
 
+páginas curtas, exemplos, formato pergunta-resposta (ligado a discussions e issues), tutorial e documento.
+
 r
 ├── Zks3cmJmQ2xrLUtqREhUUA [title=Em que ferramentas fazer/praticar programação?]
 ├── b2dHdS1vcjl6eFJjV0lzSA [title=Sistema de arquivos, interface de linha de comando, comandos de linha de comando]
