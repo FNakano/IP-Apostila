@@ -6,7 +6,7 @@ Preparar um telefone celular para editar, compilar e executar programas escritos
 
 ## Introdução
 
-A estação de trabalho de um programador, usualmente, é um desktop ou um notebook.
+A estação de trabalho de um programador, usualmente, tem um desktop ou um notebook para desenvolver os programas.
 
 Quando a proposta é *aprender a programar em C*, as ferramentas de referência são um compilador C e um editor de texto. Para essas ferramentas serem executadas outros programas, como o Sistema Operacional, são necessários.
 
@@ -147,4 +147,15 @@ Ocorreu um erro nessa particular instalação do Termux ao tentar abrir com o Ar
  
 ![](./5064575274980150055.jpg)
 
+## Conclusão e discussão
+
+Neste tutorial mostra-se, passo a passo, como preparar e usar um telefone celular como estação de trabalho para o programador.
+
+Cada um dos passos tem indicadores de sucesso e, até certo ponto, permitem identificar problemas na execução do passo.
+
+Os passos também podem servir como ponto de partida para outros tutoriais.
+
+O próximo passo neste tutorial é testá-lo e colher opiniões de quem o testou.
+
+Opiniões e propostas de melhorias neste e noutros tutoriais e materiais da apostila podem ser feitas através de *pull requests* ou através das [discussões](https://github.com/FNakano/IP-Apostila/discussions). O atendimento das propostas é decidido por este autor.
 
