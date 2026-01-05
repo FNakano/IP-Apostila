@@ -1,13 +1,70 @@
 # IP-Apostila
 Apostila de FNakano para IP
 
-páginas curtas, exemplos, formato pergunta-resposta (ligado a discussions e issues), tutoriais e documento.
+<!--- páginas curtas, exemplos, formato pergunta-resposta (ligado a discussions e issues), tutoriais e documento. --->
 
-## Introdução
+## Preâmbulo
 
-**nota**: Uso explicações e definições apresentadas na [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) pois há pouca divergência na informação apresentada nela em relação a livros didáticos e acadêmicos nos assuntos que abordo, até onde sei. A informação na Wikipedia é fornecida por pessoas que têm certa familiaridade com computadores, o que claramente influencia o uso do vocabulário, o formato do texto e, quando há, a preferência entre definições alternativas, principalmente em assuntos controversos. Por exemplo, a definição apresentada para Linguagem é um tanto axiomática. Acredito que em textos mais antigos (do começo do século XX) linguagem não seria definida desta forma pois a aplicação de matemática e computação sobre linguagens é, comparativamente, mais recente.
+(P: Por que começar assim, com "longas" explicações em assuntos que parecem não ser próximos a programação de computadores? R.: Para saber "onde estamos" e "para onde iremos", tentando não "nos perder" e nem perder a motivação de estudar.)
 
-A partir de algo que a nós, seres humanos, é familiar: a linguagem.
+**nota**: Uso explicações e definições apresentadas na [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) pois há pouca divergência na informação apresentada nela em relação a livros didáticos e acadêmicos nos assuntos que abordo, até onde sei. 
+
+Acho que narrativas são inevitáveis na comunicação entre pessoas... e elas são importantes no ensino-aprendizagem. Não tenho o conhecimento dos (seus) professores em filosofia e comunicação (que geralmente dão aulas em disciplinas do ciclo básico), mas empresto do conhecimento (deles?):
+
+> Os seres humanos geralmente afirmam entender os eventos quando conseguem formular uma história ou narrativa coerente explicando como eles acreditam que o evento foi gerado. (https://pt.wikipedia.org/wiki/Narrativa#Abordagens_das_ci%C3%AAncias_sociais)
+
+... então preparem-se para ouvir e contar histórias ...
+
+Minha primeira história tem a ver com como entender um curso de graduação: Podemos pensar um curso de graduação como um conjunto de disciplinas interrelacionadas e apresentadas aos alunos para formar seu conhecimento. As disciplinas podem abordar um mesmo assunto, cada disciplina com enfoque diferente ou com nível de detalhamento diferente. Por exemplo, na disciplina Introdução à Programação ensina-se o que é ordenação e alguns programas (algoritmos) de ordenação. O assunto é retomado e expandido na disciplina Análise de Algoritmos.
+
+Vamos restringir o escopo para a disciplina de Introdução à Programação e criar uma narrativa na direção do *Problem Based Learning - PBL*. Isto implica em *problematizar* (https://pt.wikipedia.org/wiki/Problematiza%C3%A7%C3%A3o) a disciplina de Introdução à Programação: O problema/desafio é aprender/ensinar programação de computadores. 
+
+## Considerações iniciais
+
+(poderia chamar requisitos da solução...)
+
+Temos entre 17 e 19 semanas para resolver esse problema/desafio. O processo de resolução pode ser considerado uma atividade, que pode ser dividida em várias sub-atividades - é o que se chama *Work Breakdown Structure - WBS* (https://en.wikipedia.org/wiki/Work_breakdown_structure).
+
+Podemos, também, consider as *atividades por fazer* como tarefas. Atividade não é (perfeitamente) equivalente a tarefa. Tarefa geralmente é uma descrição documental e atividade é o que, de fato, é feito. Considerando o relatório como descrição (documental) de atividades, quando tarefa, atividade e relatório tratam da mesma coisa, espera-se que tarefa seja menos detalhado e feito antes da atividade e o relatório seja mais detalhado e feito depois da atividade. Citando um texto ilustrativo:
+
+> Trabalho: tarefa e atividade
+
+> Uma dúvida que sempre aparece para os trabalhadores é a diferença entre sua função e sua atividade de trabalho. Parece pouca coisa, mas existe uma enorme diferença entre essas duas coisas.
+Em ergonomia definimos a função ou a tarefa para a qual o empregado foi contratado como sendo o trabalho prescrito, ou seja, aquilo que a empresa descreve como sendo o trabalho que ele deve fazer.
+Assim, um operador de máquinas multifuncional tem como função o trabalho de operar máquinas de alguns tipos, um torneiro CNC opera tornos de controle numérico, um estoquista faz controle de estoques, apontamentos recebimento e entrega de materiais, e assim por diante. Desta forma, a tarefa ou trabalho prescrito são apenas uma indicação documental do que o trabalhador deve fazer.
+A atividade de trabalho é uma coisa totalmente diferente. É exatamente o que o trabalhador realiza no dia a dia. É também chamada de trabalho real, ou seja, aquilo que realmente o trabalhador faz para cumprir as obrigações prescritas na tarefa.
+Portanto, aí já se nota que a tarefa é algo coletivo. Várias pessoas podem ser contratadas para a mesma função. Por exemplo, um auxiliar administrativo ou operador de máquinas terem a mesma tarefa.
+A atividade, por sua vez, é individual porque diz respeito àquilo que cada trabalhador realiza na realidade. Isso implica, em primeiro lugar, na interação entre as características físicas, mentais e psicológicas do trabalhador com o seu trabalho, envolvendo aí coisas como as ferramentas, os meios tecnológicos, o ambiente de trabalho, a organização e a gestão. Significa, portanto, que uma mesma tarefa de operação de máquinas pode se mostrar como atividades diferentes.
+(https://smabc.org.br/a-diferenca-entre-tarefa-e-atividade/)
+
+Voltando à específica tarefa de aprender/ensinar programação de computadores, alguns assuntos constam da ementa da disciplina (https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=ach2001). Espera-se que sejam apresentados, entre outros motivos, pela formação/organização de conhecimento, por influenciar outros assuntos dentro da disciplina e por abordar assuntos que serão tratados ou usados em outras disciplinas. Tomei a liberdade de organizar os assuntos da ementa em uma lista hierárquica:
+
+- Noções de organização de computadores:
+  - modelo de von Neumann, 
+  - linguagens, 
+    - interpretação e compilação, 
+  - representação interna dos dados. 
+- Resolução de problemas e desenvolvimento de algoritmos, 
+  - análise de problemas, 
+  - estratégias de solução, representação e documentação. 
+- Tipos de dados: escalares, arranjos, matrizes, cadeias de caracteres. 
+- Passagem de parâmetros. 
+- Linguagem de programação e transcrição de algoritmos. 
+- Introdução a uma linguagem imperativa. 
+- Depuração (debugger) e documentação de programas. 
+- Testes unitários. 
+- Introdução a algoritmos de busca e ordenação. 
+- Manipulação de referências.
+
+Passo a enunciar o problema como: "Aprender/ensinar programação de computadores em 17 a 19 semanas, abordando suficientemente os assuntos listados na ementa".
+
+## Estratégias de ensino/aprendizagem
+
+É possível ir de item em item na ementa e expor os assuntos, conceitos e exercitá-los. Começaríamos com uma breve história da computação, seguiríamos por computadores atuais, linguagens de programação em geral, linguagem C em específico, projetos (ié como dividir um programa em vários arquivos), depuração e teste de programas. No final do prazo, busca e ordenação (para conectar com Análise de Algoritmos) e manipulação de referências (para conectar com Algoritmos e Estruturas de Dados). Há pessoas que estão melhor adaptadas a esta organização e já vi livros didáticos com essa organização.
+
+<!--- A informação na Wikipedia é fornecida por pessoas que têm certa familiaridade com computadores, o que claramente influencia o uso do vocabulário, o formato do texto e, quando há, preferência entre definições alternativas, principalmente em assuntos controversos. Por exemplo, a definição apresentada para Linguagem é um tanto axiomática. Acredito que em textos mais antigos (do começo do século XX) linguagem não seria definida desta forma pois a aplicação de matemática e computação sobre linguagens é, comparada ao estudo de linguagens, mais recente. --->
+
+Também é possível partir de algo que a nós, seres humanos, é familiar: a linguagem.
 
 > Uma linguagem é um sistema estruturado para comunicação que é composto de gramática e vocabulário. É a forma predominante de comunicação entre humanos tanto de forma falada como, através de símbolos, de forma escrita.(...) (https://en.wikipedia.org/wiki/Language)
 
@@ -23,14 +80,14 @@ Note que aquilo que está contido em um programa de computador é *executado* e 
 
 A linguagem C é uma linguagem de programação. C possui vocabulário e gramática logo, em uma abordagem construtivista, seria esperado que vocabulário e gramática fossem apresentados... mas poucos aprendem uma linguagem estudando primeiro as regras de formação... mesmo na norma técnica que define a linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf) , a gramática formal é apresentada em um apêndice. No resumo (do draft) da norma o autor já informa que esse documento deve ser de conhecimento de programadores e implementadores de compiladores mas não é um tutorial.
 
-Há uma porção de cursos e outras apostilas que se propõe a ensinar linguagem C. O conteúdo das que vi segue um roteiro comum: palavras reservadas, constantes, variáveis, operações lógicas e aritméticas, pré-processador, comandos, funções, ponteiros, estruturas de dados. Também é a sequência que usarei na *trilha principal* desta apostila mas não pretendo copiar ou traduzir informação que já está nesse material. Pretendo apresentar referências a ele, enriquecer a informação, acrescentar exemplos.
+Há uma porção de cursos e outras apostilas que se propõe a ensinar linguagem C. O conteúdo das que vi segue um roteiro comum: palavras reservadas, constantes, variáveis, operações lógicas e aritméticas, pré-processador, comandos, funções, ponteiros, estruturas de dados. Essa sequência está na *trilha principal* desta apostila mas não pretendo copiar ou traduzir informação que já está nesse material. Pretendo "desafiar" o aluno/leitor com "problemas" (assunto que já passou pela etapa de problematização e pode ser fraseado como um problema), orientar a solução, apresentar referências à norma e outras fontes, enriquecer a informação, acrescentar exemplos.
 
 **nota**: mais sobre o uso de linguagens em computação, taxonomias de linguagens e lista de linguagens em [linguagensEmComputação.md](./linguagensEmComputação.md)
 
 
-Acredito que seres humanos, como nós, aprendemos linguagens a partir de exemplos e praticando exemplos e variações. Sobre essa *base* é apresentada, depois, a teoria e os desdobramentos. É claro que essa maneira de aprender tem seus problemas. Em analogia ao estudo de linguas,  frequentemente sabemos alguns tempos verbais antes de saber que são tempos verbais e sabemos conjugar alguns verbos sem saber o que é conjugação de verbos. Por outro lado, somos capazes de nos expressar.
+Acredito que seres humanos, como nós, aprendemos linguagens a partir de exemplos e praticando exemplos e variações. Sobre essa *base* é apresentada, depois, a teoria e os desdobramentos. É claro que essa maneira de aprender tem seus problemas. Em analogia ao estudo de linguas,  frequentemente sabemos alguns tempos verbais antes de saber que são tempos verbais e sabemos conjugar alguns verbos sem saber o que é conjugação de verbos. Por outro lado, somos capazes de nos expressar (escrever programas).
 
-Este é o objetivo desta apostila. Ao final da leitura, quem seguiu as orientações contidas nela deve conseguir *expressar-se* usando a linguagem C. *Expressar-se* significa escrever programas de computador nessa linguagem.
+Este é o objetivo desta apostila. Ao final da prática dos exercícios, quem seguiu as orientações contidas nela deve conseguir *expressar-se* usando a linguagem C. *Expressar-se* significa escrever programas de computador nessa linguagem.
 
 ## Preparação 
 
