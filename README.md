@@ -21,34 +21,34 @@ Note que aquilo que está contido em um programa de computador é *executado* e 
 
 **nota**: Um raciocínio longo, talvez tortuoso, pode justificar que a afirmação *HTML é uma linguagem de programação* seja considerada verdadeira. Entretanto, entre profissionais da computação, no mínimo convencionalmente, HTML não é uma linguagem de programação. HTML é uma linguagem de marcação.
 
-A linguagem C é uma linguagem de programação e será apresentada nesta apostila. Em se tratando de uma linguagem, C possui vocabulário e gramática logo, em uma abordagem construtivista, seria esperado que vocabulário e gramática fossem apresentados. Esta é a sequência usada na norma técnica que define a linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf). Também é a sequência que usarei na *trilha principal* desta apostila.
+A linguagem C é uma linguagem de programação. C possui vocabulário e gramática logo, em uma abordagem construtivista, seria esperado que vocabulário e gramática fossem apresentados... mas poucos aprendem uma linguagem estudando primeiro as regras de formação... mesmo na norma técnica que define a linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf) , a gramática formal é apresentada em um apêndice. No resumo (do draft) da norma o autor já informa que esse documento deve ser de conhecimento de programadores e implementadores de compiladores mas não é um tutorial.
+
+Há uma porção de cursos e outras apostilas que se propõe a ensinar linguagem C. O conteúdo das que vi segue um roteiro comum: palavras reservadas, constantes, variáveis, operações lógicas e aritméticas, pré-processador, comandos, funções, ponteiros, estruturas de dados. Também é a sequência que usarei na *trilha principal* desta apostila mas não pretendo copiar ou traduzir informação que já está nesse material. Pretendo apresentar referências a ele, enriquecer a informação, acrescentar exemplos.
 
 **nota**: mais sobre o uso de linguagens em computação, taxonomias de linguagens e lista de linguagens em [linguagensEmComputação.md](./linguagensEmComputação.md)
 
 
-Ocorre que seres humanos, como nós, aprendemos linguagens através de exemplos e praticando exemplos e variações. É claro que essa maneira de aprender tem seus problemas. Por exemplo, frequentemente sabemos alguns tempos verbais antes de saber que são tempos verbais e sabemos conjugar alguns verbos sem saber o que é conjugação de verbos. Por outro lado, somos capazes de nos expressar.
+Acredito que seres humanos, como nós, aprendemos linguagens a partir de exemplos e praticando exemplos e variações. Sobre essa *base* é apresentada, depois, a teoria e os desdobramentos. É claro que essa maneira de aprender tem seus problemas. Em analogia ao estudo de linguas,  frequentemente sabemos alguns tempos verbais antes de saber que são tempos verbais e sabemos conjugar alguns verbos sem saber o que é conjugação de verbos. Por outro lado, somos capazes de nos expressar.
 
 Este é o objetivo desta apostila. Ao final da leitura, quem seguiu as orientações contidas nela deve conseguir *expressar-se* usando a linguagem C. *Expressar-se* significa escrever programas de computador nessa linguagem.
 
 ## Preparação 
 
-O material nesta apostila tem formatos variados, entre eles, texto expositivo, tutorial, exemplos, ...
+O material nesta apostila tem formatos variados, entre eles, texto expositivo, tutorial, exemplos, ... e muitas referências.
 
-As relações entre tópicos nesse material, por exemplo o que  (ié que tópicos) saber antes de aprender um (outro) tópico, como um tópico influi no outro, definem trilhas. A *trilha principal* é a sequência apresentada na norma que define a linguagem C e que influencia fortemente (a meu ver) como o tutorial que apresenta a linguagem C em W3Schools (https://www.w3schools.com/c/index.php) está sequenciado. A *trilha dos exemplos* usa tarefas longas para ditar a sequência da aprendizagem e cada passo da tarefa é associada a exemplos curtos e referências para outros tutoriais e para os tópicos na norma. 
+As relações entre tópicos nesse material, por exemplo o que  (ié que tópicos) saber antes de aprender um (outro) tópico, como um tópico influi no outro, definem trilhas. A *trilha principal* é a sequência apresentada na norma que define a linguagem C e que influencia fortemente (a meu ver) como o tutorial que apresenta a linguagem C em W3Schools (https://www.w3schools.com/c/index.php) está sequenciado. A *trilha dos exemplos* usa tarefas longas para balizar a sequência da aprendizagem e cada passo da tarefa é associada a exemplos curtos e referências para outros tutoriais e para os tópicos na norma. 
 
 A informação que esta apostila contém (ié o valor), mesmo implicitamente, está na seleção dos exemplos e no nível de detalhamento, baseadas na experiência do autor e dos colaboradores. Frequentemente o conteúdo de cada tópico está bem apresentado nas referências o que faz a apostila ser *apenas* uma lista de referências. Seu valor está na organização e na conexão entre essas referências.
 
 Em geral, as apostilas que apresentam alguma linguagem de programação concentram-se em apresentar a linguagem de programação, sem orientar o leitor a respeito de como criar sua área de trabalho, como usar a área de trabalho, como lidar com as atividades propostas, o que chamo de preparação.
 
-Àrea de trabalho é o nome que dou ao espaço físico e computacional onde aprende-se a programar. A área de trabalho de referência contém, entre outras coisas, um desktop ou um notebook e programas como o compilador e o editor de texto.
+Àrea de trabalho é o nome que dou ao espaço físico e computacional onde aprende-se a programar. A área de trabalho de referência contém, entre outras coisas, um desktop ou um notebook e programas como o compilador e o editor de texto. A interface de referência é a linha de comando, mesmo que esteja embarcada em um ambiente gráfico. Usaremos *Command Line Interface - CLI* ou *prompt de comando* ou terminal.
 
 O trabalho de criar/configurar áreas de trabalho pode ser abreviado, por exemplo usando compiladores on-line como https://www.onlinegdb.com/online_c_compiler ou usando ambientes de aprendizagem como https://www.w3schools.com/c/index.php .  As duas formas abreviadas têm limitações e podem não atender a todas as necessidades.
- 
-Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila.
 
-Tutoriais são documentos que apresentam a sequências de passos usada para atingir certo objetivo.
+Tutoriais são documentos que apresentam a sequência de passos usada para atingir certo objetivo. Espera-se que quem os siga seja capaz de, num segundo momento, decompor a informação nos tutoriais e recompô-la para a finalidade que escolher.
  
-É possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux .
+Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila. Para apresentar um tutorial útil, é possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa.
 
 Trilha dos exemplos em poucos ítens:
 
