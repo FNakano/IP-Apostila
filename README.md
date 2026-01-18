@@ -84,6 +84,7 @@ Há uma porção de cursos e outras apostilas que se propõe a ensinar linguagem
 
 **nota**: mais sobre o uso de linguagens em computação, taxonomias de linguagens e lista de linguagens em [linguagensEmComputação.md](./linguagensEmComputação.md)
 
+Eu gostaria que vocês trocassem impressões com colegas e comigo sobre o que aprenderam, como aprenderam e se há pontos fortes/fracos nas estratégias de ensino.
 
 Acredito que seres humanos, como nós, aprendemos linguagens a partir de exemplos e praticando exemplos e variações. Sobre essa *base* é apresentada, depois, a teoria e os desdobramentos. É claro que essa maneira de aprender tem seus problemas. Em analogia ao estudo de linguas,  frequentemente sabemos alguns tempos verbais antes de saber que são tempos verbais e sabemos conjugar alguns verbos sem saber o que é conjugação de verbos. Por outro lado, somos capazes de nos expressar (escrever programas).
 
@@ -91,30 +92,101 @@ Este é o objetivo desta apostila. Ao final da prática dos exercícios, quem se
 
 ## Preparação 
 
-O material nesta apostila tem formatos variados, entre eles, texto expositivo, tutorial, exemplos, ... e muitas referências.
+<!--- O material nesta apostila tem formatos variados, entre eles, texto expositivo, tutorial, exemplos, ... e muitas referências.
 
 As relações entre tópicos nesse material, por exemplo o que  (ié que tópicos) saber antes de aprender um (outro) tópico, como um tópico influi no outro, definem trilhas. A *trilha principal* é a sequência apresentada na norma que define a linguagem C e que influencia fortemente (a meu ver) como o tutorial que apresenta a linguagem C em W3Schools (https://www.w3schools.com/c/index.php) está sequenciado. A *trilha dos exemplos* usa tarefas longas para balizar a sequência da aprendizagem e cada passo da tarefa é associada a exemplos curtos e referências para outros tutoriais e para os tópicos na norma. 
 
 A informação que esta apostila contém (ié o valor), mesmo implicitamente, está na seleção dos exemplos e no nível de detalhamento, baseadas na experiência do autor e dos colaboradores. Frequentemente o conteúdo de cada tópico está bem apresentado nas referências o que faz a apostila ser *apenas* uma lista de referências. Seu valor está na organização e na conexão entre essas referências.
 
+---> 
+
 Em geral, as apostilas que apresentam alguma linguagem de programação concentram-se em apresentar a linguagem de programação, sem orientar o leitor a respeito de como criar sua área de trabalho, como usar a área de trabalho, como lidar com as atividades propostas, o que chamo de preparação.
 
-Àrea de trabalho é o nome que dou ao espaço físico e computacional onde aprende-se a programar. A área de trabalho de referência contém, entre outras coisas, um desktop ou um notebook e programas como o compilador e o editor de texto. A interface de referência é a linha de comando, mesmo que esteja embarcada em um ambiente gráfico. Usaremos *Command Line Interface - CLI* ou *prompt de comando* ou terminal.
+Àrea de trabalho é o nome que dou ao espaço físico e computacional onde aprende-se a programar. A área de trabalho de referência contém, entre outras coisas, um desktop ou um notebook e programas como o compilador e o editor de texto. A interface de referência é a linha de comando, mesmo que esteja embarcada em um ambiente gráfico. Usaremos *Command Line Interface - CLI* ou *prompt de comando* ou terminal para designar esse ambiente.
 
-O trabalho de criar/configurar áreas de trabalho pode ser abreviado, por exemplo usando compiladores on-line como https://www.onlinegdb.com/online_c_compiler ou usando ambientes de aprendizagem como https://www.w3schools.com/c/index.php .  As duas formas abreviadas têm limitações e podem não atender a todas as necessidades.
+Considerando que o público-alvo deste material seja de estudantes que acabaram de entrar na graduação, é de se esperar que quase todos tenham telefone celular mas nem todos tenham desktop ou notebook, logo, se for possível usar o telefone celular como área de trabalho, diminui-se a urgência em ter à disposição um desktop ou notebook.
+
+O trabalho de criar/configurar áreas de trabalho pode ser abreviado, por exemplo usando compiladores on-line como https://www.onlinegdb.com/online_c_compiler ou usando ambientes de aprendizagem como https://www.w3schools.com/c/index.php .  As duas formas abreviadas têm limitações e podem não atender a todas as necessidades, por outro lado, permitem que se aprenda a programar em C até usando uma *smart TV*.
 
 Tutoriais são documentos que apresentam a sequência de passos usada para atingir certo objetivo. Espera-se que quem os siga seja capaz de, num segundo momento, decompor a informação nos tutoriais e recompô-la para a finalidade que escolher.
  
-Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila. Para apresentar um tutorial útil, é possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa.
+Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila. Para apresentar um tutorial útil, é possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa escrito em linguagem C.
+
 
 Trilha dos exemplos em poucos ítens:
 
 0. O primeiro programa em C (https://en.wikipedia.org/wiki/C_(programming_language)#%22Hello,_world%22_example)
+ - header file (#include)
+   - pré-processador
+     - substituição de texto;
+ - main() - o que é
+   - funções
+     - protótipo de função;
+     - declaração de função;
+       - assinatura da função;
+       - corpo da função;
+     - chamada de função;
+ - puts(...) - o que é
+ - o argumento de puts(...) - o que é
+   - constante imediata (contrapor com constante declarada para o pré-processador e com constante declarada com palavra reservada `const`);
+   - constante imediata do tipo string;
+ - printf(...) - o que é
+ - os argumentos de printf - o que são
+   - constante imediata do tipo string
+   - especificadores de formato
+   - variáveis
+ - melhorar o programa incluindo perguntar o nome e escrever o nome;
+   - declarar variáveis
+     - por que declarar string é feito com `char s[n]` 
+     - complicações: codificação de caracteres 
+   - a função `scanf(...)`
+   - os argumentos de `scanf(...)`
+     - spoiler: quando se usa string (e certos outros tipos derivados) `scanf(...)` esconde uma complicação que vai aparecer na tarefa do questionário 
+1. Tarefa: criar uma calculadora de quatro operações interativa
+  - apresentar tipos de dados numéricos: int, float, double
+  - falar sobre truncamento, arredondamento e propagação de erros
+  - falar sobre string de formato e valor de retorno do scanf, mencionar *parsing*
+  - falar sobre string de formato do printf
+  - apresentar o comando de seleção `if`
+  - apresentar o comando de repetição `do..while`
 1. Tarefa: automatizar a aplicação de um questionário;
-2. Tarefa: simular um investimento ao longo do tempo;
+ - começar com uma questão;
+   - atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
+     - caracteres comparados a strings: variável de tipo primitivo comparado a variável de tipo derivado;
+       - Por que é assim? ... porque computadores são assim:
+         - Modelo de Von Neumann;
+         - Memória do computador (RAM);
+     - usar comandos de seleção para converter resposta em ponto; 
+   - testar, por exemplo: o que acontece caso a resposta não seja válida?
+   - melhorar o programa - **repetir** a pergunta **caso a resposta não seja válida**;
+   - o `&` nos argumentos de `scanf(...)` - primeiro contato com referências e ponteiros.
+ - aplicar várias questões;
+   - notar a **repetição** de comandos;
+   - eliminar a **repetição** de comandos;
+     - funções
+       - passagem de argumentos;
+         - tipos de variável: primitivo e derivado (n3220 sec. 6.2.5)
+           - tipo derivado -> referência -> ponteiro
+         - quando o argumento tem tipo primitivo;
+         - quando o argumento tem tipo derivado;
+       - escopo de variáveis;
+     - arrays de strings e strings como arrays de caracteres;
+     - trocar as questões sem recompilar o programa;
+     - fazer um log das perguntas, resposta, ...;
+2. Tarefa: simular um investimento/(compra a prazo) ao longo do tempo;
+  - arrays de números (double);
+  - remuneração, inflação e taxa de juros;
+    - lojas em compras a prazo podem embutir os juros: calculam o valor da parcela, com juros, somam as parcelas e usam esse valor como preço à vista. Ainda podem não dar desconto como maneira de incentivar o consumidor a comprar a prazo e, consequentemente, usar a financeira ligada à loja; 
+  - arredondamento, truncamento;
+  - encontrar a taxa de juros de uma compra a prazo através do valor à vista e dos valores das parcelas usando o método da bissecção;
+    - um arquivo para conter as funções que aplicam os juros e outro para conter as funções que implementam o método da bissecção;
+  - guardar e levar à vista ou levar e pagar parcelas?
 3. Expositivo: buscar e ordenar;
+  - arrays de números inteiros;
+  - dados-satélite e estruturas de dados;
 4. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
-
+  - a função qsort da biblioteca stdlib;
+  - ponteiro para funções;
 
 ## Anotações diversas
 
