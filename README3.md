@@ -5,26 +5,6 @@ Apostila de FNakano para IP
 
 ## Preâmbulo
 
-"Tudo pode mudar..."
-
-## O "tom" da conversa nas aulas
- 
-Gostaria de iniciar dando o contexto que desejo nesta disciplina: "Uma conversa gentil tratando os assuntos com ceticismo científico".
-
-A *conversa gentil* refere-se a:
-  
-> A gentileza nas conversas é uma qualidade humana fundamental que transforma a comunicação em um ambiente de respeito, empatia e acolhimento. Ser gentil ao falar envolve o uso de amabilidade, delicadeza e atenção, indo além do simples comportamento educado para criar conexões verdadeiras. (Gerado por IA do Google)
-
-O ceticismo científico refere-se a:
-  
-> Ceticismo científico é uma postura de questionamento e exigência de evidências robustas, baseada no método científico, para validar afirmações, combatendo pseudociências, superstições e charlatanismo, sem negar tudo, mas sim buscando provas, como defendiam divulgadores como Carl Sagan, para proteger o pensamento crítico e o avanço do conhecimento. Ele exige teste e revisão constante de hipóteses, diferenciando-se do negacionismo que apenas rejeita fatos, mantendo a mente aberta para o novo, mas com rigor. (Gerado por IA do Google)
-
-Confesso que usei a IA para gerar o texto sobre termos que eu já sabia(?) o significado mas não queria usar meu tempo elaborando o texto. Revisei o texto gerado, achei que expressa o que eu desejo expressar. Deixo registrada a citação porque ela pode mudar (é gerada por IA) e a fonte.
-
-O texto gerado por IA baseia-se em textos já escritos, seja por pessoas, seja por IA no processo de geração do texto final. Por enquanto, analisar o processo de geração até chegar aos textos e autores originais com qualidade desejada para que o texto gerado seja um texto científico, não foi feito.
-
-## As explicações em aula
-
 (P: Por que começar assim, com "longas" explicações em assuntos que parecem não ser próximos a programação de computadores? R.: Para saber "onde estamos" e "para onde iremos", tentando não "nos perder" e nem perder a motivação de estudar.)
 
 **nota**: Uso explicações e definições apresentadas na [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) pois há pouca divergência na informação apresentada nela em relação a livros didáticos e acadêmicos nos assuntos que abordo, até onde sei. 
@@ -35,11 +15,7 @@ Acho que narrativas são inevitáveis na comunicação entre pessoas... e elas s
 
 ... então preparem-se para ouvir e contar histórias ...
 
-Minha primeira história tem a ver com como entender um curso de graduação: Podemos pensar um curso de graduação como um conjunto de disciplinas interrelacionadas e apresentadas aos alunos para formar seu conhecimento. As disciplinas podem abordar um mesmo assunto, cada disciplina com enfoque diferente ou com nível de detalhamento diferente. Por exemplo, na disciplina Introdução à Programação ensina-se:
-
-- ensina-se o que é ordenação e 
-- apresenta-se alguns programas de ordenação. 
-  - **nota**: a explicação sobre o funcionamento do programa e do algoritmo tem detalhamento suficiente para Introdução à Programação, o assunto é retomado e expandido na disciplina Análise de Algoritmos.
+Minha primeira história tem a ver com como entender um curso de graduação: Podemos pensar um curso de graduação como um conjunto de disciplinas interrelacionadas e apresentadas aos alunos para formar seu conhecimento. As disciplinas podem abordar um mesmo assunto, cada disciplina com enfoque diferente ou com nível de detalhamento diferente. Por exemplo, na disciplina Introdução à Programação ensina-se o que é ordenação e alguns programas (algoritmos) de ordenação. O assunto é retomado e expandido na disciplina Análise de Algoritmos.
 
 Vamos restringir o escopo para a disciplina de Introdução à Programação e criar uma narrativa na direção do *Problem Based Learning - PBL*. Isto implica em *problematizar* (https://pt.wikipedia.org/wiki/Problematiza%C3%A7%C3%A3o) a disciplina de Introdução à Programação: O problema/desafio é aprender/ensinar programação de computadores. 
 
@@ -114,21 +90,6 @@ Acredito que seres humanos, como nós, aprendemos linguagens a partir de exemplo
 
 Este é o objetivo desta apostila. Ao final da prática dos exercícios, quem seguiu as orientações contidas nela deve conseguir *expressar-se* usando a linguagem C. *Expressar-se* significa escrever programas de computador nessa linguagem.
 
-*Ser capaz de escrever programas* implica que se é capaz de sintetizar/gerar (muito mais que alguns) programas. A comprovação, acredito que definitiva, da capacidade de sintetizar/gerar programas é gerá-los todos. Uma tarefa impossível para uma pessoa.
-
-Como essa pessoa conseguiria saber que é capaz de escrever programas? Como uma outra pessoa poderia avaliar a capacidade da primeira?
-
-Acho que é aí que entram os indicadores: avaliações, exercícios, notas, ...
-
-O processo de ensinar/aprender e testar através de indicadores, mesmo para um não-pesquisador no assunto, tem falhas. Argumentar que "é o melhor que se tem", por ser usado há séculos, por "dar resultado", ... não me satisfaz, em termos do tal ceticismo científico, mas é o que acabo usando...
-
-O indicador que usarei para balizar o processo de ensinar/aprender (mas não o de avaliar) é "Compreender, com detalhes e vocabulário suficiente para Introdução a Programação, um [específico programa](./Balizador), após 3/4 do prazo dado (semestre).". Acredito que isto indicará que aprendeu-se o suficiente para compreender os programas/algoritmos que serão apresentados nas próximas disciplinas, sem ocupar-se em demasia com aspectos de programação como sintaxe, declaração de variáveis e outros - ocupar-se em aprender o aspecto do assunto apropriado na próxima disciplina. Por exemplo, em análise de algoritmos, dado um programa/algoritmo, perguntar-se qual a complexidade assintótica ao invés de perguntar-se onde as variáveis precisam ser declaradas.
-
-Caso o objetivo fosse compreender o específico programa, eu acharia adequado partir para sua análise até o nível de detalhamento necessário, mas esta seria uma estratégia de mínimo esforço para satisfazer o indicador, que é algo muito limitado. O objetivo é construir nosso conhecimento para compreender o específico programa e outros que virão durante nossa vida. Na próxima seção, inicia-se o processo de contrução.
-
-Antes de iniciar, usar *Large Language Models - LLMs* como ChatGPT, Gemini, Copilot, ... é inevitável. Não pela dificuldade do assunto, mas pela disponibilidade: Se alguém usar o buscador Google será exposto a uma resposta gerada por Gemini... mas saiba usar os modelos para ampliar seu conhecimento ao invés de usá-lo para poupar trabalho pois o primeiro uso não é facilmente automatizável, já o segundo uso pode ser automatizado por um programa que faz CTRL-C no chat do LLM e faz CTRL-V no editor de texto que está com o programa aberto. A chance de quem faz o segundo uso ser dispensado é maior que a de quem faz o primeiro uso - estou exagerando em alguns pontos da história mas a preocupação em tornar-se dispensável não é exagero... Veja como pretendo usar LLMs na disciplina em 
-
-
 ## Preparação 
 
 <!--- O material nesta apostila tem formatos variados, entre eles, texto expositivo, tutorial, exemplos, ... e muitas referências.
@@ -188,7 +149,7 @@ Trilha dos exemplos em poucos ítens:
   - falar sobre string de formato do printf
   - apresentar o comando de seleção `if`
   - apresentar o comando de repetição `do..while`
-2. Tarefa: automatizar a aplicação de um questionário;
+1. Tarefa: automatizar a aplicação de um questionário;
  - começar com uma questão;
    - atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
      - caracteres comparados a strings: variável de tipo primitivo comparado a variável de tipo derivado;
@@ -212,14 +173,18 @@ Trilha dos exemplos em poucos ítens:
      - arrays de strings e strings como arrays de caracteres;
      - trocar as questões sem recompilar o programa;
      - fazer um log das perguntas, resposta, ...;
+2. Tarefa: simular um investimento/(compra a prazo) ao longo do tempo;
+  - arrays de números (double);
+  - remuneração, inflação e taxa de juros;
+    - lojas em compras a prazo podem embutir os juros: calculam o valor da parcela, com juros, somam as parcelas e usam esse valor como preço à vista. Ainda podem não dar desconto como maneira de incentivar o consumidor a comprar a prazo e, consequentemente, usar a financeira ligada à loja; 
+  - arredondamento, truncamento;
+  - encontrar a taxa de juros de uma compra a prazo através do valor à vista e dos valores das parcelas usando o método da bissecção;
+    - um arquivo para conter as funções que aplicam os juros e outro para conter as funções que implementam o método da bissecção;
+  - guardar e levar à vista ou levar e pagar parcelas?
 3. Expositivo: buscar e ordenar;
   - arrays de números inteiros;
   - dados-satélite e estruturas de dados;
-4. Código-fonte em vários arquivos;
-  - por quê? Módulos!;
-  - make;
-5. Compreender o balizador;
-6. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
+4. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
   - a função qsort da biblioteca stdlib;
   - ponteiro para funções;
 
