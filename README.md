@@ -139,9 +139,10 @@ A informação que esta apostila contém (ié o valor), mesmo implicitamente, es
 
 ---> 
 
-Em geral, as apostilas que apresentam alguma linguagem de programação concentram-se em apresentar a linguagem de programação, sem orientar o leitor a respeito de como criar sua área de trabalho, como usar a área de trabalho, como lidar com as atividades propostas, o que chamo de preparação.
+Em geral, as apostilas que apresentam alguma linguagem de programação concentram-se em apresentar a linguagem de programação, sem orientar o leitor a respeito de como criar sua área de trabalho, como usar a área de trabalho, como lidar com as atividades propostas. A esses elementos chamarei preparação.
 
-Àrea de trabalho é o nome que dou ao espaço físico e computacional onde aprende-se a programar. A área de trabalho de referência contém, entre outras coisas, um desktop ou um notebook e programas como o compilador e o editor de texto. A interface de referência é a linha de comando, mesmo que esteja embarcada em um ambiente gráfico. Usaremos *Command Line Interface - CLI* ou *prompt de comando* ou terminal para designar esse ambiente.
+Àrea de trabalho é o nome que dou ao espaço físico e computacional onde aprende-se a programar. A área de trabalho de referência contém, entre outras coisas, um desktop ou um notebook e programas como compilador, editor de texto e interface de linha de comando. A interface de referência é um ambiente em modo texto, mesmo que esteja embarcada em um ambiente gráfico, em que uma pessoa digita comandos e estes são executados pelo computador. Usaremos os termos *Command Line Interface - CLI* ou *prompt de comando* ou terminal ou *shell* para designar esse ambiente. Alguns comandos úteis para navegar na linha de comando são apresentados em https://github.com/FNakano/IP-Apostila/tree/main/ShellLinux .
+
 
 Considerando que o público-alvo deste material seja de estudantes que acabaram de entrar na graduação, é de se esperar que quase todos tenham telefone celular mas nem todos tenham desktop ou notebook, logo, se for possível usar o telefone celular como área de trabalho, diminui-se a urgência em ter à disposição um desktop ou notebook.
 
@@ -149,10 +150,12 @@ O trabalho de criar/configurar áreas de trabalho pode ser abreviado, por exempl
 
 Tutoriais são documentos que apresentam a sequência de passos usada para atingir certo objetivo. Espera-se que quem os siga seja capaz de, num segundo momento, decompor a informação nos tutoriais e recompô-la para a finalidade que escolher.
  
-Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila. Para apresentar um tutorial útil, é possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa escrito em linguagem C.
+Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila. Para apresentar um tutorial útil:
 
+- É possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa escrito em linguagem C.
 
-Trilha dos exemplos em poucos ítens:
+## Sequência de assuntos a abordar em aula
+
 
 0. O primeiro programa em C (https://en.wikipedia.org/wiki/C_(programming_language)#%22Hello,_world%22_example)
  - header file (#include)
@@ -223,6 +226,17 @@ Trilha dos exemplos em poucos ítens:
   - a função qsort da biblioteca stdlib;
   - ponteiro para funções;
 
+## Método
+
+Inicia-se propondo que os estudantes executem um programa. O programa é fornecido em um arquivo, seja documentação, seja código-fonte. Após o sucesso na execução, ou os estudantes ou o professor usam LLM para aprender o que o programa faz e possam melhorar (avaliar, criticar, acrescentar informação) as respostas apresentadas pelo LLM, bem como aprimorar seus conhecimentos usando a resposta do LLM.
+
+Em seguida são propostos desafios para incrementar os programas, é possível usar qualquer apoio disponível, inclusive e principalmente o apoio do docente. Também é importante mostrar a compreensão sobre os ajustes que fez no programa. Quando todos os desafios forem concluídos com sucesso, ou o tempo de aula tiver se esgotado, a atividade é terminada.
+
+Haverá tarefas que requerem explicações mais longas para serem compreendidas. Nestes casos, inicia-se com uma aula rápida (*briefing*) e segue-se o processo anterior.
+
+Haverá provas presenciais no estilo tradicional: papel e lápis, sem consulta, duração de 1h30min.
+
+ 
 ## Anotações diversas
 
 ```

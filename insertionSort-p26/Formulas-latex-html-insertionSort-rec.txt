@@ -1,0 +1,75 @@
+<img src="https://latex.codecogs.com/svg.latex?" title="função">
+
+
+<pre data-mduml-processed="true">int *ordenaPorInsercaoArray(int *array, int comprimentoDoArray, int indiceDoPrimeiroForaDaOrdem) {
+  if (indiceDoPrimeiroForaDaOrdem&gt;=comprimentoDoArray)         // c44*1
+    return array;    // condição de parada: array ordenado   // c45*1
+  int key=array[indiceDoPrimeiroForaDaOrdem];                  // c46*1
+  int i=indiceDoPrimeiroForaDaOrdem-1;                         // c47*1
+  while ((i&gt;=0) &amp;&amp; (array[i]&gt;key)) {             // c48*t_{I}
+    array[i+1]=array[i];                                     // c49*t_{I}-1
+    i--;                                                     // c50*t_{I}-1
+  }
+  array[i+1]=key;                                              // c52*1
+  ordenaPorInsercaoArray (array, comprimentoDoArray, indiceDoPrimeiroForaDaOrdem+1);
+  return array;                                                // c54
+}
+</pre>
+
+<p dir="ltr" style="text-align: left;">
+  Para encurtar as fórmulas, troquei, "indiceDoPrimeiroForaDeOrdem" por "izão". Continua análogo ao t_j da explicação do livro.
+  <br>
+</p>
+
+<p dir="ltr" style="text-align: left;">
+  Genérico
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?T(n)=c44+c45+c46+c47+c48*t_{I}+c49*(t_{I}-1)+c50*(t_{I}-1)+c52+T(n-1)+c54" title="função">
+
+<p dir="ltr" style="text-align: left;">
+  Melhor caso:
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?T(n)=c44+c45+c46+c47+c48+c52+T(n-1)+c54" title="função">
+
+<p dir="ltr" style="text-align: left;">
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?T(n)=T(n-1)+(c44+c45+c46+c47+c48+c52+c54)" title="função">
+
+<p dir="ltr" style="text-align: left;">
+  Agrupando todas as constantes numa só:
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?T(n)=T(n-1)+c" title="função">
+
+<p dir="ltr" style="text-align: left;">
+  Completando com condição inicial:
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?\left\{\begin{matrix}T(n)=T(n-1)+c\\T(1)=c\end{matrix}\right." title="função">
+
+<p dir="ltr" style="text-align: left;">
+  "Desenrolando" a recorrência
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?\begin{matrix}T(1)=c\\T(2)=T(1)+c=2*c\\T(3)=T(2)+c=3*c\\T(4)=T(3)+c=4*c\\...\end{matrix}" title="função">
+
+<p dir="ltr" style="text-align: left;">
+  Por enquanto, o melhor argumento que temos é que, por intuição:
+  <br>
+</p>
+
+<img src="https://latex.codecogs.com/svg.latex?T(n)=\sum_{j=1}^{n}c=n*c" title="função">
+
+<p dir="ltr" style="text-align: left;">
+  Nas próximas aulas desenvolveremos a técnica de demonstração por indução, que resulta em um argumento melhor que a intuição.
+  <br>
+</p>

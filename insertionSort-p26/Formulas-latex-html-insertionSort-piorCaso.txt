@@ -1,0 +1,182 @@
+<p dir="ltr" style="text-align: left;">
+  Partindo do caso genérico do insertionSort:
+  <br>
+</p>
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(n)=c44+c45+c46+c47+c48*(n-1)+c49*((n-1)-1)+c50*((n-1)-1)+c52+T(n-1)+c54" title="função">
+</p>
+Reagrupando:
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(n)=T(n-1)+[c44+c45+c46+c47+c48*(n-1)+c49*((n-1)-1)+c50*((n-1)-1)+c52+c54]" title="função">
+</p>Refatorando para obter funções de n:
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(n)=T(n-1)+[c_1*n+c_2]" title="função">
+</p>
+Admitindo que c1 e c2 são iguais a c:
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(n)=T(n-1)+[c*n+c]" title="função">
+</p>
+Definindo condição inicial:
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?\left\{\begin{matrix}T(n)=T(n-1)+c*n+c\\T(1)=c\end{matrix}\right." title="função">
+</p>
+Substituindo valores na recorrência:
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(1)=c (def.)\\T(2)=T(1)+2*c+c=4*c\\T(3)=T(2)+3*c+c=8*c\\T(4)=T(3)+4*c+c=13*c\\T(5)=T(4)+5*c+c=19*c\\T(6)=T(5)+6*c+c=26*c\\..." title="função">
+</p>
+Um colega propôs que a fórmula (fechada) que gera resultados iguais à recorrência é:
+<br>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(n)=2n-1+\frac{n(n-1)}{2}" title="função">
+</p>No momento, não foi apresentado como demonstrar que a fórmula proposta equivale à recorrência. Assim, por enquanto, fica-se limitado a comparar, para uma quantidade pequena de valores, os valores obtidos pela aplicação da recorrência com os valores obtidos pela aplicação da fórmula
+proposta.
+<br>
+
+<p dir="ltr" style="text-align: left;">&nbsp;
+  <br>
+</p>
+<p dir="ltr" style="text-align: left;">
+  <br>
+</p>
+
+
+<table cellspacing="0" border="0">
+  <colgroup width="85"></colgroup>
+  <colgroup width="125"></colgroup>
+  <colgroup width="153"></colgroup>
+  <tbody>
+    <tr>
+      <td height="17" align="center">
+        <br>
+      </td>
+      <td align="center">Pela recorrência</td>
+      <td align="center">Pela fórmula proposta</td>
+    </tr>
+    <tr>
+      <td height="17" align="center">n</td>
+      <td align="center">T(n)=T(n-1)+c*n+c</td>
+      <td align="center">T(n)=2n-1 + (n(n-1))/2</td>
+    </tr>
+    <tr>
+      <td sdval="1" sdnum="1046;" height="17" align="center">1</td>
+      <td sdval="1" sdnum="1046;" align="center">1</td>
+      <td sdval="1" sdnum="1046;" align="center">1</td>
+    </tr>
+    <tr>
+      <td sdval="2" sdnum="1046;" height="17" align="center">2</td>
+      <td sdval="4" sdnum="1046;" align="center">4</td>
+      <td sdval="4" sdnum="1046;" align="center">4</td>
+    </tr>
+    <tr>
+      <td sdval="3" sdnum="1046;" height="17" align="center">3</td>
+      <td sdval="8" sdnum="1046;" align="center">8</td>
+      <td sdval="8" sdnum="1046;" align="center">8</td>
+    </tr>
+    <tr>
+      <td sdval="4" sdnum="1046;" height="17" align="center">4</td>
+      <td sdval="13" sdnum="1046;" align="center">13</td>
+      <td sdval="13" sdnum="1046;" align="center">13</td>
+    </tr>
+    <tr>
+      <td sdval="5" sdnum="1046;" height="17" align="center">5</td>
+      <td sdval="19" sdnum="1046;" align="center">19</td>
+      <td sdval="19" sdnum="1046;" align="center">19</td>
+    </tr>
+    <tr>
+      <td sdval="6" sdnum="1046;" height="17" align="center">6</td>
+      <td sdval="26" sdnum="1046;" align="center">26</td>
+      <td sdval="26" sdnum="1046;" align="center">26</td>
+    </tr>
+    <tr>
+      <td sdval="7" sdnum="1046;" height="17" align="center">7</td>
+      <td sdval="34" sdnum="1046;" align="center">34</td>
+      <td sdval="34" sdnum="1046;" align="center">34</td>
+    </tr>
+    <tr>
+      <td sdval="8" sdnum="1046;" height="17" align="center">8</td>
+      <td sdval="43" sdnum="1046;" align="center">43</td>
+      <td sdval="43" sdnum="1046;" align="center">43</td>
+    </tr>
+    <tr>
+      <td sdval="9" sdnum="1046;" height="17" align="center">9</td>
+      <td sdval="53" sdnum="1046;" align="center">53</td>
+      <td sdval="53" sdnum="1046;" align="center">53</td>
+    </tr>
+    <tr>
+      <td sdval="10" sdnum="1046;" height="17" align="center">10</td>
+      <td sdval="64" sdnum="1046;" align="center">64</td>
+      <td sdval="64" sdnum="1046;" align="center">64</td>
+    </tr>
+    <tr>
+      <td sdval="11" sdnum="1046;" height="17" align="center">11</td>
+      <td sdval="76" sdnum="1046;" align="center">76</td>
+      <td sdval="76" sdnum="1046;" align="center">76</td>
+    </tr>
+    <tr>
+      <td sdval="12" sdnum="1046;" height="17" align="center">12</td>
+      <td sdval="89" sdnum="1046;" align="center">89</td>
+      <td sdval="89" sdnum="1046;" align="center">89</td>
+    </tr>
+    <tr>
+      <td sdval="13" sdnum="1046;" height="17" align="center">13</td>
+      <td sdval="103" sdnum="1046;" align="center">103</td>
+      <td sdval="103" sdnum="1046;" align="center">103</td>
+    </tr>
+    <tr>
+      <td sdval="14" sdnum="1046;" height="17" align="center">14</td>
+      <td sdval="118" sdnum="1046;" align="center">118</td>
+      <td sdval="118" sdnum="1046;" align="center">118</td>
+    </tr>
+    <tr>
+      <td sdval="15" sdnum="1046;" height="17" align="center">15</td>
+      <td sdval="134" sdnum="1046;" align="center">134</td>
+      <td sdval="134" sdnum="1046;" align="center">134</td>
+    </tr>
+    <tr>
+      <td sdval="16" sdnum="1046;" height="17" align="center">16</td>
+      <td sdval="151" sdnum="1046;" align="center">151</td>
+      <td sdval="151" sdnum="1046;" align="center">151</td>
+    </tr>
+    <tr>
+      <td sdval="17" sdnum="1046;" height="17" align="center">17</td>
+      <td sdval="169" sdnum="1046;" align="center">169</td>
+      <td sdval="169" sdnum="1046;" align="center">169</td>
+    </tr>
+    <tr>
+      <td sdval="18" sdnum="1046;" height="17" align="center">18</td>
+      <td sdval="188" sdnum="1046;" align="center">188</td>
+      <td sdval="188" sdnum="1046;" align="center">188</td>
+    </tr>
+    <tr>
+      <td sdval="19" sdnum="1046;" height="17" align="center">19</td>
+      <td sdval="208" sdnum="1046;" align="center">208</td>
+      <td sdval="208" sdnum="1046;" align="center">208</td>
+    </tr>
+    <tr>
+      <td sdval="20" sdnum="1046;" height="17" align="center">20</td>
+      <td sdval="229" sdnum="1046;" align="center">229</td>
+      <td sdval="229" sdnum="1046;" align="center">229</td>
+    </tr>
+  </tbody>
+</table>
+
+<p dir="ltr" style="text-align: left;">Acreditando que a fórmula esteja correta, chega-se a:</p>
+<p>
+  <img src="https://latex.codecogs.com/svg.latex?T(n)=2n-1+\frac{n(n-1)}{2}\\T(n)=2n-1+n^2/2-n/2\\T(n)=\frac{n^2}{2}+\frac{3n}{2}-1" title="função">
+</p>
+<p dir="ltr" style="text-align: left;">
+  Interpretando: o tempo de execução do insertionSort, no pior caso, é uma função quadrática de n.
+  <br>
+</p>
+<p dir="ltr" style="text-align: left;">&nbsp;
+  <br>
+</p>
+<p dir="ltr" style="text-align: left;">
+  <br>
+</p>

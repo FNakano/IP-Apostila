@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+Na aula do dia 10 de setembro, analisamos o pior caso do tempo de execução do insertion-sort. Chegamos à (fórmula de) recorrência:
+
+$
+def.:\; \begin{cases}
+ T(1)=c \\ 
+ T(n)=T(n-1)+c*n+c 
+\end{cases} \\
+$
+
+Um colega propôs que a fórmula abaixo equivale à recorrência (com a vantagem de não ser calculada a partir dos termos anteriores), mas não conhecíamos nenhuma técnica para demonstrar que ela é válida para todo $n>0$.
+
+
+$
+\\
+conjectura:\;T(n)=c*\big{(}2n-1+\frac{n(n-1)}{2}\big{)} \\
+$
+
+\textbf{nota}: Nas notas da aula de 10 de setembro, faltou a constante que incluí agora.
+
+A técnica que, agora, conhecemos é a demonstração por indução. Então vamos demonstrar, por indução, que a conjectura equivale à definição.
+
+Iniciando pelo caso base:
+
+$
+\\
+base: \textrm{para } n=1 \\
+\textrm{(pela def.)    } T(n)= c\\
+\textrm{(pela conj.)    } T(n)= c \\
+$
+
+Como os resultados são iguais, para o caso base, definição e conjectura são equivalentes.
+
+Escolhe-se a estratégia de demonstração do passo: \textit{Supondo que vale para n-1, demonstre que vale para n}. Desta forma, a hipótese de indução é:
+
+$
+\\
+T(n-1)=c*\big{(}2(n-1)-1+\frac{(n-1)(n-2)}{2}\big{)} \\
+$
+
+A hipótese de indução pode ser usada na demonstração do passo de indução, quantas vezes for necessária e quando for conveniente.
+
+Seguindo para a demonstração, inicia-se com alguma verdade, por exemplo, pela definição:
+
+$
+\\
+T(n)=T(n-1)+c*n+c \\
+$
+
+substituindo $T(n-1)$ pela hipótese de indução e calculando, obtém-se: 
+
+$
+\\
+T(n)=c*\big{(}2(n-1)-1+\frac{(n-1)(n-2)}{2}+n+1\big{)} \\
+T(n)=c*\big{(}3n-2+\frac{(n-1)(n-2)}{2}\big{)} \\
+$
+
+Como a fórmula em que se quer chegar contém o termo $2n-1$, então já o separo, o que resulta:
+
+$
+\\
+T(n)=c*\big{(}2n-1+(n-1)+\frac{(n-1)(n-2)}{2}\big{)} \\
+$
+
+Agora trabalho sobre o restante da expressão para chegar à fórmula:
+
+$
+\\
+T(n)=c*\big{(}2n-1+\frac{2(n-1)+(n-1)(n-2)}{2}\big{)} \\
+$
+
+Vou ocupar-me somente com o numerador: 
+
+$
+\\
+2(n-1)+(n-1)(n-2)=2n-2+n^2-3n+2=n^2-n=n(n-1) \\
+$
+
+Voltando aa expressao inteira:
+
+$
+\\
+T(n)=c*\big{(}2n-1+\frac{n(n-1)}{2}\big{)} \\
+$
+
+Que \'{e} igual à conjectura, logo, demonstramos que a conjectura e definição são equivalentes para todo $n>0$.
+
+\end{document}
+
