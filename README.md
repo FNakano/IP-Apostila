@@ -96,11 +96,11 @@ Também é possível partir de algo que a nós, seres humanos, é familiar: a li
 
 > Programas de computador são ou uma sequência, ou um conjunto de instruções escritos em uma linguagem de programação para um computador executar (https://en.wikipedia.org/wiki/Computer_program)
 
-> O computador executar, em computação, é o processo em que um programa de computador é processado para desempenhar as ações codificadas no programa. (https://en.wikipedia.org/wiki/Execution_(computing))
+> O computador executar, em computação, é o processo em que um programa de computador é processado para o computador desempenhar as ações codificadas no programa. (https://en.wikipedia.org/wiki/Execution_(computing))
 
 Note que aquilo que está contido em um programa de computador é *executado* e esse conteúdo é composto por instruções para o computador.
 
-**nota**: Um raciocínio longo, talvez tortuoso, pode justificar que a afirmação *HTML é uma linguagem de programação* seja considerada verdadeira. Entretanto, entre profissionais da computação, no mínimo convencionalmente, HTML não é uma linguagem de programação. HTML é uma linguagem de marcação.
+**nota**: Talvez exista um raciocínio longo, talvez tortuoso, que conclua que a afirmação *HTML é uma linguagem de programação* seja  verdadeira. Entretanto, entre profissionais da computação, no mínimo convencionalmente, HTML não é uma linguagem de programação. HTML é uma linguagem de marcação.
 
 A linguagem C é uma linguagem de programação. C possui vocabulário e gramática logo, em uma abordagem construtivista, seria esperado que vocabulário e gramática fossem apresentados... mas poucos aprendem uma linguagem estudando primeiro as regras de formação... mesmo na norma técnica que define a linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf) , a gramática formal é apresentada em um apêndice. No resumo (do draft) da norma o autor já informa que esse documento deve ser de conhecimento de programadores e implementadores de compiladores mas não é um tutorial.
 
@@ -237,7 +237,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
     2. dados-satélite e estruturas de dados;
     3. insertion-sort, de acordo com o livro de Análise de Algoritmos;
 4. Código-fonte em vários arquivos;
-    1. por quê? Módulos!;
+    1. por quê? ... para organizar melhor e entender mais rápido!;
     2. make;
 5. Compreender o Balizador;
 6. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
@@ -248,7 +248,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 
 Inicia-se propondo que os estudantes executem um programa (ié, uma tarefa). O programa é fornecido em um arquivo, seja documentação, seja código-fonte. Após o sucesso na execução, ou os estudantes ou o professor usam LLM para aprender o que o programa faz e possam melhorar (avaliar, criticar, acrescentar informação) as respostas apresentadas pelo LLM, bem como aprimorar seus conhecimentos usando a resposta do LLM.
 
-Em seguida são propostos desafios para incrementar os programas, é possível usar qualquer apoio disponível, inclusive e principalmente o apoio do docente. Também é importante mostrar a compreensão sobre os ajustes que fez no programa. Quando todos os desafios forem concluídos com sucesso, ou o tempo de aula tiver se esgotado, a atividade é terminada.
+Em seguida são propostos desafios (tarefas) para incrementar os programas, é possível usar qualquer apoio disponível, inclusive e principalmente o apoio do docente. Também é importante mostrar a compreensão sobre os ajustes que fez no programa. Quando todos os desafios forem concluídos com sucesso, ou o tempo de aula tiver se esgotado, a atividade é terminada.
 
 O processo que inicia no recebimento da tarefa e termina no sucesso da execução **também** é denominado *ciclo de vida do programa* (https://en.wikipedia.org/wiki/Program_lifecycle_phase). Acredito que esse entendimento era o mais comum até lá pela década de 1980. Depois disso houve uma popularização da construção de software (programas), empresas construindo programas cada vez mais sofisticados e a larga adoção de métodos de engenharia de software para a construção dos programas. O entendimento mais comum passou a ser o apresentado em https://en.wikipedia.org/wiki/Systems_development_life_cycle .
 
@@ -256,7 +256,7 @@ O processo que inicia no recebimento da tarefa e termina no sucesso da execuçã
 FONTE: o autor
 captura de tela de https://en.wikipedia.org/wiki/Program_lifecycle_phase, para fins documentais pois está cada vez mais difícil acessar esse conteúdo.
 
-Nesse ciclo, fica claro que durante as tarefas, vamos:
+Considerando a definição mais antiga de *ciclo de vida de um programa* durante as tarefas vamos:
 
 1. editar o código-fonte numa versão inicial, consertar erros, acrescentar funcionalidades
 2. compilar o código-fonte, linkar o código-objeto, criar o programa executável
@@ -274,7 +274,100 @@ Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apo
 - às seções da documentação do padrão ISO da linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf)
 - às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
 - aos tutoriais da W3Schools (https://www.w3schools.com/c/index.php)
- 
+
+`awk -v n=20 '{ print "|" substr($0, 1, n) "...| n3220 | GCC | W3Schools |"; }' toCut.txt`
+
+| abordar em aula | n3220 | GCC | W3Schools |
+| --- | --- | --- | --- |
+|0. O primeiro progra...| n3220 | GCC | W3Schools |
+|  1. header file (#i...| n3220 | GCC | W3Schools |
+|    1. pré-processad...| n3220 | GCC | W3Schools |
+|      1. substituiçã...| n3220 | GCC | W3Schools |
+|  2. main() - o que ...| n3220 | GCC | W3Schools |
+|    1. funções...| n3220 | GCC | W3Schools |
+|      1. declaração ...| n3220 | GCC | W3Schools |
+|      2. protótipo (...| n3220 | GCC | W3Schools |
+|      3. corpo da fu...| n3220 | GCC | W3Schools |
+|      4. chamada de ...| n3220 | GCC | W3Schools |
+|  3. puts(...) - o q...| n3220 | GCC | W3Schools |
+|    1. o argumento d...| n3220 | GCC | W3Schools |
+|    2. constante ime...| n3220 | GCC | W3Schools |
+|    3. constante ime...| n3220 | GCC | W3Schools |
+|    4. a existência ...| n3220 | GCC | W3Schools |
+|  4. como strings sã...| n3220 | GCC | W3Schools |
+|  5. printf(...) - o...| n3220 | GCC | W3Schools |
+|    1. os argumentos...| n3220 | GCC | W3Schools |
+|    1. constante ime...| n3220 | GCC | W3Schools |
+|    2. especificador...| n3220 | GCC | W3Schools |
+|    3. variáveis - a...| n3220 | GCC | W3Schools |
+|  6. existem outros ...| n3220 | GCC | W3Schools |
+|  7. melhorar o prog...| n3220 | GCC | W3Schools |
+|    1. declarar vari...| n3220 | GCC | W3Schools |
+|    2. por que decla...| n3220 | GCC | W3Schools |
+|    3. complicações:...| n3220 | GCC | W3Schools |
+|    4. a função `sca...| n3220 | GCC | W3Schools |
+|      1. os argument...| n3220 | GCC | W3Schools |
+|      2. spoiler: qu...| n3220 | GCC | W3Schools |
+|      3. mas quando ...| n3220 | GCC | W3Schools |
+|1. Tarefa: criar uma...| n3220 | GCC | W3Schools |
+|  1. apresentar tipo...| n3220 | GCC | W3Schools |
+|  2. falar sobre tru...| n3220 | GCC | W3Schools |
+|  3. falar sobre str...| n3220 | GCC | W3Schools |
+|  4. falar sobre str...| n3220 | GCC | W3Schools |
+|  5. apresentar o co...| n3220 | GCC | W3Schools |
+|  6. apresentar o co...| n3220 | GCC | W3Schools |
+|  7. explicar, de fo...| n3220 | GCC | W3Schools |
+|    1. o esperado é ...| n3220 | GCC | W3Schools |
+|2. Tarefa: automatiz...| n3220 | GCC | W3Schools |
+|  1. começar com uma...| n3220 | GCC | W3Schools |
+|    1. atribuir pont...| n3220 | GCC | W3Schools |
+|      1. caracteres ...| n3220 | GCC | W3Schools |
+|        1. Por que é...| n3220 | GCC | W3Schools |
+|          1. Modelo ...| n3220 | GCC | W3Schools |
+|          2. Memória...| n3220 | GCC | W3Schools |
+|    2. usar comandos...| n3220 | GCC | W3Schools |
+|  2. testar, por exe...| n3220 | GCC | W3Schools |
+|  3. melhorar o prog...| n3220 | GCC | W3Schools |
+|  4. o `&` nos argum...| n3220 | GCC | W3Schools |
+|    1. um modelo abs...| n3220 | GCC | W3Schools |
+|      1. entendendo ...| n3220 | GCC | W3Schools |
+|      2. (spoiler) e...| n3220 | GCC | W3Schools |
+|      3. entender is...| n3220 | GCC | W3Schools |
+|    2. asterisco `*`...| n3220 | GCC | W3Schools |
+|    3. asterisco `*`...| n3220 | GCC | W3Schools |
+|    4. O operador `&...| n3220 | GCC | W3Schools |
+|    5. imprimindo po...| n3220 | GCC | W3Schools |
+|2. aplicar várias qu...| n3220 | GCC | W3Schools |
+|  1. notar a **repet...| n3220 | GCC | W3Schools |
+|  2. eliminar a **re...| n3220 | GCC | W3Schools |
+|    1. funções...| n3220 | GCC | W3Schools |
+|      1. passagem de...| n3220 | GCC | W3Schools |
+|        1. tipos de ...| n3220 | GCC | W3Schools |
+|          1. tipo de...| n3220 | GCC | W3Schools |
+|        2. quando o ...| n3220 | GCC | W3Schools |
+|        3. quando o ...| n3220 | GCC | W3Schools |
+|      2. escopo de v...| n3220 | GCC | W3Schools |
+|    2. arrays de str...| n3220 | GCC | W3Schools |
+|      1. usar arrays...| n3220 | GCC | W3Schools |
+|      2. `malloc`, `...| n3220 | GCC | W3Schools |
+|  3. trocar as quest...| n3220 | GCC | W3Schools |
+|    1. caso 1: com a...| n3220 | GCC | W3Schools |
+|    2. caso 2: acres...| n3220 | GCC | W3Schools |
+|    3. caso 3: fazer...| n3220 | GCC | W3Schools |
+|3. Expositivo: busca...| n3220 | GCC | W3Schools |
+|  1. arrays de númer...| n3220 | GCC | W3Schools |
+|  2. dados-satélite ...| n3220 | GCC | W3Schools |
+|  3. insertion-sort,...| n3220 | GCC | W3Schools |
+|4. Código-fonte em v...| n3220 | GCC | W3Schools |
+|  1. por quê? ... pa...| n3220 | GCC | W3Schools |
+|  2. make;...| n3220 | GCC | W3Schools |
+|5. Compreender o Bal...| n3220 | GCC | W3Schools |
+|6. Tarefa: comparar ...| n3220 | GCC | W3Schools |
+|  1. a função qsort ...| n3220 | GCC | W3Schools |
+|  2. ponteiro para f...| n3220 | GCC | W3Schools |
+
+
+
 ## Anotações diversas
 
 ```
