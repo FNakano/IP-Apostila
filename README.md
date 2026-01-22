@@ -37,11 +37,7 @@ Acho que narrativas são inevitáveis na comunicação entre pessoas... e elas s
 
 ... então preparem-se para ouvir e contar histórias ...
 
-Minha primeira história tem a ver com como entender um curso de graduação: Podemos pensar um curso de graduação como um conjunto de disciplinas interrelacionadas e apresentadas aos alunos para formar seu conhecimento. As disciplinas podem abordar um mesmo assunto, cada disciplina com enfoque diferente ou com nível de detalhamento diferente. Por exemplo, na disciplina Introdução à Programação ensina-se:
-
-- ensina-se o que é ordenação e 
-- apresenta-se alguns programas de ordenação. 
-  - **nota**: a explicação sobre o funcionamento do programa e do algoritmo tem detalhamento suficiente para Introdução à Programação, o assunto é retomado e expandido na disciplina Análise de Algoritmos.
+Minha primeira história tem a ver com como entender um curso de graduação: Podemos pensar um curso de graduação como um conjunto de disciplinas interrelacionadas e apresentadas aos alunos para formar seu conhecimento. As disciplinas podem abordar um mesmo assunto, cada disciplina com enfoque diferente ou com nível de detalhamento diferente. Por exemplo, na disciplina Introdução à Programação ensina-se o que é ordenação e, en geral, apresenta-se um algoritmo de ordenação com detalhamento suficiente para Introdução à Programação. Na disciplina Análise de Algoritmos o assunto é retomado e expandido, apresentando vários algoritmos diferentes e analisando sua complexidade de tempo e de espaço.
 
 Vamos restringir o escopo para a disciplina de Introdução à Programação e criar uma narrativa na direção do *Problem Based Learning - PBL*. Isto implica em *problematizar* (https://pt.wikipedia.org/wiki/Problematiza%C3%A7%C3%A3o) a disciplina de Introdução à Programação: O problema/desafio é aprender/ensinar programação de computadores. 
 
@@ -66,13 +62,13 @@ A atividade, por sua vez, é individual porque diz respeito àquilo que cada tra
 Voltando à específica tarefa de aprender/ensinar programação de computadores, alguns assuntos constam da ementa da disciplina (https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=ach2001). Espera-se que sejam apresentados, entre outros motivos, pela formação/organização de conhecimento, por influenciar outros assuntos dentro da disciplina e por abordar assuntos que serão tratados ou usados em outras disciplinas. Tomei a liberdade de organizar os assuntos da ementa em uma lista hierárquica, os índices da lista serão usados para referenciá-los:
 
 1. Noções de organização de computadores:
-  1.1 modelo de von Neumann, 
-  1.2 linguagens, 
-    1.2.1 interpretação e compilação, 
-  1.3 representação interna dos dados. 
+  1. modelo de von Neumann, (por uma questão do Markdown, precisei notar assim, mas este é o item 1.1)
+  2. linguagens, 
+    1. interpretação e compilação,  (por uma questão do Markdown, precisei notar assim, mas este é o item 1.2.1)
+  3. representação interna dos dados. 
 2. Resolução de problemas e desenvolvimento de algoritmos, 
-   2.1 análise de problemas, 
-   2.2 estratégias de solução, representação e documentação. 
+   1. análise de problemas, 
+   2. estratégias de solução, representação e documentação. 
 3. Tipos de dados: escalares, arranjos, matrizes, cadeias de caracteres. 
 4. Passagem de parâmetros. 
 5. Linguagem de programação e transcrição de algoritmos. 
@@ -160,92 +156,92 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 
 
 0. O primeiro programa em C (https://en.wikipedia.org/wiki/C_(programming_language)#%22Hello,_world%22_example)
- - header file (#include)
-   - pré-processador
-     - substituição de texto;
- - main() - o que é
-   - funções
-     - protótipo de função;
-     - declaração de função;
-       - assinatura da função;
-       - corpo da função;
-     - chamada de função;
- - puts(...) - o que é
- - o argumento de puts(...) - o que é
-   - constante imediata (contrapor com constante declarada para o pré-processador e com constante declarada com palavra reservada `const`);
-   - constante imediata do tipo string;
-   - a existência de variáveis tipadas e o tipo `char`;
-   - como strings são construídas a partir de `char`;
- - printf(...) - o que é
- - os argumentos de printf - o que são
-   - constante imediata do tipo string
-   - especificadores de formato
-   - variáveis - atribuição é diferente de equivalência matemática;
-     - existem tipos de variáveis;
- - melhorar o programa incluindo perguntar o nome e escrever o nome;
-   - declarar variáveis
-     - por que declarar string é feito com `char s[n]` 
-     - complicações: codificação de caracteres 
-   - a função `scanf(...)`
-   - os argumentos de `scanf(...)`
-     - spoiler: quando usa string `scanf(...)` esconde o conceito de ponteiros, que é importante em C.
-     - mas quando usa tipos primitivos, o uso de ponteiros aparece;
+ 1. header file (#include)
+   1. pré-processador
+     1. substituição de texto;
+ 2. main() - o que é
+   1. funções
+     1. protótipo de função;
+     1. declaração de função;
+       1. protótipo (assinatura) da função;
+       2. corpo da função;
+     2. chamada de função;
+ 3. puts(...) - o que é
+ 4. o argumento de puts(...) - o que é
+   1. constante imediata (contrapor com constante declarada para o pré-processador e com constante declarada com palavra reservada `const`);
+   2. constante imediata do tipo string;
+   3. a existência de variáveis tipadas e o tipo `char`;
+   4. como strings são construídas a partir de `char`;
+ 5. printf(...) - o que é
+ 6. os argumentos de printf - o que são
+   1. constante imediata do tipo string
+   2. especificadores de formato
+   3. variáveis - atribuição é diferente de equivalência matemática;
+     1. existem tipos de variáveis;
+ 7. melhorar o programa incluindo perguntar o nome e escrever o nome;
+   1. declarar variáveis
+     1. por que declarar string é feito com `char s[n]` 
+     2. complicações: codificação de caracteres 
+   2. a função `scanf(...)`
+   3. os argumentos de `scanf(...)`
+     1. spoiler: quando usa string `scanf(...)` esconde o conceito de ponteiros, que é importante em C.
+     2. mas quando usa tipos primitivos, o uso de ponteiros aparece;
 1. Tarefa: criar uma calculadora de quatro operações interativa
-  - apresentar tipos de dados numéricos: int, float, double
-  - falar sobre truncamento, arredondamento e propagação de erros
-  - falar sobre string de formato e valor de retorno do scanf, mencionar *parsing*
-  - falar sobre string de formato do printf
-  - apresentar o comando de seleção `if`
-  - apresentar o comando de repetição `do..while`
-  - explicar, de forma simples, a necessidade do `&` no scanf ou o uso de `atof`, conforme o caso.
-    - o esperado é usar `double v; scanf ("%lf", &v);`
+  1. apresentar tipos de dados numéricos: int, float, double
+  2. falar sobre truncamento, arredondamento e propagação de erros
+  3. falar sobre string de formato e valor de retorno do scanf, mencionar *parsing*
+  4. falar sobre string de formato do printf
+  5. apresentar o comando de seleção `if`
+  6. apresentar o comando de repetição `do..while`
+  7. explicar, de forma simples, a necessidade do `&` no scanf ou o uso de `atof`, conforme o caso.
+    1. o esperado é usar `double v; scanf ("%lf", &v);`
 2. Tarefa: automatizar a aplicação de um questionário;
- - começar com uma questão;
-   - atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
-     - caracteres comparados a strings: variável de tipo primitivo comparado a variável de tipo derivado;
-       - Por que é assim? ... porque computadores são assim:
-         - Modelo de Von Neumann;
-         - Memória do computador (RAM);
-     - usar comandos de seleção para converter resposta em ponto; 
-   - testar, por exemplo: o que acontece caso a resposta não seja válida?
-   - melhorar o programa - **repetir** a pergunta **caso a resposta não seja válida**;
-   - o `&` nos argumentos de `scanf(...)`: referências e ponteiros.
-     - um modelo abstrato para a memória do computador: um array (tabela) de endereços e valores armazenados;
-       - entendendo este modelo para memória acredito que fica mais fácil entender `*` e `&`;
-       - (spoiler) entendendo este modelo para memória acredito que fica mais fácil entender `.` e `->` em `struct`;
-       - entender isto é importante para Algoritmos e Estruturas de Dados;
-     - asterisco `*` como modificador de tipo;
-     - asterisco `*` como operador;
-     - O operador `&` (e-comercial); 
-     - imprimindo ponteiros, usando "%p";
- - aplicar várias questões (obs.: código-fonte em um só arquivo);
-   - notar a **repetição** de comandos;
-   - eliminar a **repetição** de comandos;
-     - funções
-       - passagem de argumentos;
-         - tipos de variável: primitivo e derivado (n3220 sec. 6.2.5)
-           - tipo derivado -> referência -> ponteiro
-         - quando o argumento tem tipo primitivo;
-         - quando o argumento tem tipo derivado;
-       - escopo de variáveis;
-     - arrays de strings e strings como arrays de caracteres;
-       - usar arrays para armazenar o texto das questões;
-       - `malloc`, `calloc`, `realoc`, `free`;
-     - trocar as questões sem recompilar o programa;
-       - caso 1: com as questões armazenadas em um array inicializado no código - desafio: criar uma função capaz de apresentar qualquer uma das questões, receber a resposta do usuário e retornar a resposta;
-       - caso 2: acrescentar a funcionalidade de ler e escrever perguntas em arquivo;
-       - caso 3: fazer um log das perguntas, respostas, ...;
+ 1. começar com uma questão;
+   1. atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
+     1. caracteres comparados a strings: variável de tipo primitivo comparado a variável de tipo derivado;
+       1. Por que é assim? ... porque computadores são assim:
+         1. Modelo de Von Neumann;
+         2. Memória do computador (RAM);
+     2. usar comandos de seleção para converter resposta em ponto; 
+   2. testar, por exemplo: o que acontece caso a resposta não seja válida?
+   3. melhorar o programa - **repetir** a pergunta **caso a resposta não seja válida**;
+   4. o `&` nos argumentos de `scanf(...)`: referências e ponteiros.
+     1. um modelo abstrato para a memória do computador: um array (tabela) de endereços e valores armazenados;
+       1. entendendo este modelo para memória acredito que fica mais fácil entender `*` e `&`;
+       2. (spoiler) entendendo este modelo para memória acredito que fica mais fácil entender `.` e `->` em `struct`;
+       3. entender isto é importante para Algoritmos e Estruturas de Dados;
+     2. asterisco `*` como modificador de tipo;
+     3. asterisco `*` como operador;
+     4. O operador `&` (e-comercial); 
+     5. imprimindo ponteiros, usando "%p";
+ 2. aplicar várias questões (obs.: código-fonte em um só arquivo);
+   1. notar a **repetição** de comandos;
+   2. eliminar a **repetição** de comandos;
+     1. funções
+       1. passagem de argumentos;
+         1. tipos de variável: primitivo e derivado (n3220 sec. 6.2.5)
+           1. tipo derivado -> referência -> ponteiro
+         2. quando o argumento tem tipo primitivo;
+         3. quando o argumento tem tipo derivado;
+       2. escopo de variáveis;
+     2. arrays de strings e strings como arrays de caracteres;
+       1. usar arrays para armazenar o texto das questões;
+       2. `malloc`, `calloc`, `realoc`, `free`;
+     3. trocar as questões sem recompilar o programa;
+       1. caso 1: com as questões armazenadas em um array inicializado no código - desafio: criar uma função capaz de apresentar qualquer uma das questões, receber a resposta do usuário e retornar a resposta;
+       2. caso 2: acrescentar a funcionalidade de ler e escrever perguntas em arquivo;
+       3. caso 3: fazer um log das perguntas, respostas, ...;
 3. Expositivo: buscar e ordenar;
-  - arrays de números inteiros;
-  - dados-satélite e estruturas de dados;
-  - insertion-sort, de acordo com o livro de Análise de Algoritmos;
+  1. arrays de números inteiros;
+  2. dados-satélite e estruturas de dados;
+  3. insertion-sort, de acordo com o livro de Análise de Algoritmos;
 4. Código-fonte em vários arquivos;
-  - por quê? Módulos!;
-  - make;
+  1. por quê? Módulos!;
+  2. make;
 5. Compreender o Balizador;
 6. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
-  - a função qsort da biblioteca stdlib;
-  - ponteiro para funções;
+  1. a função qsort da biblioteca stdlib;
+  2. ponteiro para funções;
 
 ## Método
 
