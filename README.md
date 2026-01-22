@@ -19,6 +19,8 @@ O ceticismo científico refere-se a:
   
 > Ceticismo científico é uma postura de questionamento e exigência de evidências robustas, baseada no método científico, para validar afirmações, combatendo pseudociências, superstições e charlatanismo, sem negar tudo, mas sim buscando provas, como defendiam divulgadores como Carl Sagan, para proteger o pensamento crítico e o avanço do conhecimento. Ele exige teste e revisão constante de hipóteses, diferenciando-se do negacionismo que apenas rejeita fatos, mantendo a mente aberta para o novo, mas com rigor. (Gerado por IA do Google)
 
+Sugestões e comentários sobre este material, *não sobre questões administrativas*, podem ser feitos através das discussões do repositório: https://github.com/FNakano/IP-Apostila/discussions . Cópias da apostila podem ser feitas por `fork` ou por `clone`, comandos do `Git`. Pedidos de correção do material podem ser solicitados nos *issues* https://github.com/FNakano/IP-Apostila/issues e serão analisados. *Pull requests* podem ser aceitos mas a chance é pequena. 
+
 Confesso que usei a IA para gerar o texto sobre termos que eu já sabia(?) o significado mas não queria usar meu tempo elaborando o texto. Revisei o texto gerado, achei que expressa o que eu desejo expressar. Deixo registrada a citação porque ela pode mudar (é gerada por IA) e a fonte.
 
 O texto gerado por IA baseia-se em textos já escritos, seja por pessoas, seja por IA no processo de geração do texto final. Por enquanto, analisar o processo de geração até chegar aos textos e autores originais com qualidade desejada para que o texto gerado seja um texto científico, não foi feito.
@@ -61,24 +63,24 @@ Portanto, aí já se nota que a tarefa é algo coletivo. Várias pessoas podem s
 A atividade, por sua vez, é individual porque diz respeito àquilo que cada trabalhador realiza na realidade. Isso implica, em primeiro lugar, na interação entre as características físicas, mentais e psicológicas do trabalhador com o seu trabalho, envolvendo aí coisas como as ferramentas, os meios tecnológicos, o ambiente de trabalho, a organização e a gestão. Significa, portanto, que uma mesma tarefa de operação de máquinas pode se mostrar como atividades diferentes.
 (https://smabc.org.br/a-diferenca-entre-tarefa-e-atividade/)
 
-Voltando à específica tarefa de aprender/ensinar programação de computadores, alguns assuntos constam da ementa da disciplina (https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=ach2001). Espera-se que sejam apresentados, entre outros motivos, pela formação/organização de conhecimento, por influenciar outros assuntos dentro da disciplina e por abordar assuntos que serão tratados ou usados em outras disciplinas. Tomei a liberdade de organizar os assuntos da ementa em uma lista hierárquica:
+Voltando à específica tarefa de aprender/ensinar programação de computadores, alguns assuntos constam da ementa da disciplina (https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=ach2001). Espera-se que sejam apresentados, entre outros motivos, pela formação/organização de conhecimento, por influenciar outros assuntos dentro da disciplina e por abordar assuntos que serão tratados ou usados em outras disciplinas. Tomei a liberdade de organizar os assuntos da ementa em uma lista hierárquica, os índices da lista serão usados para referenciá-los:
 
-- Noções de organização de computadores:
-  - modelo de von Neumann, 
-  - linguagens, 
-    - interpretação e compilação, 
-  - representação interna dos dados. 
-- Resolução de problemas e desenvolvimento de algoritmos, 
-  - análise de problemas, 
-  - estratégias de solução, representação e documentação. 
-- Tipos de dados: escalares, arranjos, matrizes, cadeias de caracteres. 
-- Passagem de parâmetros. 
-- Linguagem de programação e transcrição de algoritmos. 
-- Introdução a uma linguagem imperativa. 
-- Depuração (debugger) e documentação de programas. 
-- Testes unitários. 
-- Introdução a algoritmos de busca e ordenação. 
-- Manipulação de referências.
+1. Noções de organização de computadores:
+  1.1 modelo de von Neumann, 
+  1.2 linguagens, 
+    1.2.1 interpretação e compilação, 
+  1.3 representação interna dos dados. 
+2. Resolução de problemas e desenvolvimento de algoritmos, 
+   2.1 análise de problemas, 
+   2.2 estratégias de solução, representação e documentação. 
+3. Tipos de dados: escalares, arranjos, matrizes, cadeias de caracteres. 
+4. Passagem de parâmetros. 
+5. Linguagem de programação e transcrição de algoritmos. 
+6. Introdução a uma linguagem imperativa. 
+7. Depuração (debugger) e documentação de programas. 
+8. Testes unitários. 
+9. Introdução a algoritmos de busca e ordenação. 
+10. Manipulação de referências.
 
 Passo a enunciar o problema como: "Aprender/ensinar programação de computadores em 17 a 19 semanas, abordando suficientemente os assuntos listados na ementa".
 
@@ -120,13 +122,13 @@ Como essa pessoa conseguiria saber que é capaz de escrever programas? Como uma 
 
 Acho que é aí que entram os indicadores: avaliações, exercícios, notas, ...
 
-O processo de ensinar/aprender e testar através de indicadores, mesmo para um não-pesquisador no assunto, tem falhas. Argumentar que "é o melhor que se tem", por ser usado há séculos, por "dar resultado", ... não me satisfaz, em termos do tal ceticismo científico, mas é o que acabo usando...
+O processo de ensinar/aprender e testar através de indicadores, mesmo para um não-pesquisador no assunto (como eu), tem falhas. Argumentar que "é o melhor que se tem", por ser usado há séculos, por "dar resultado", ... não me satisfaz, em termos do tal ceticismo científico, mas a necessidade prática sempre urge, então "o melhor que se tem" é o que acabo usando...
 
 O indicador que usarei para balizar o processo de ensinar/aprender (mas não o de avaliar) é "Compreender, com detalhes e vocabulário suficiente para Introdução a Programação, um [específico programa](./Balizador), após 3/4 do prazo dado (semestre).". Acredito que isto indicará que aprendeu-se o suficiente para compreender os programas/algoritmos que serão apresentados nas próximas disciplinas, sem ocupar-se em demasia com aspectos de programação como sintaxe, declaração de variáveis e outros - ocupar-se em aprender o aspecto do assunto apropriado na próxima disciplina. Por exemplo, em análise de algoritmos, dado um programa/algoritmo, perguntar-se qual a complexidade assintótica ao invés de perguntar-se onde as variáveis precisam ser declaradas.
 
 Caso o objetivo fosse compreender o específico programa, eu acharia adequado partir para sua análise até o nível de detalhamento necessário, mas esta seria uma estratégia de mínimo esforço para satisfazer o indicador, que é algo muito limitado. O objetivo é construir nosso conhecimento para compreender o específico programa e outros que virão durante nossa vida. Na próxima seção, inicia-se o processo de contrução.
 
-Antes de iniciar, usar *Large Language Models - LLMs* como ChatGPT, Gemini, Copilot, ... é inevitável. Não pela dificuldade do assunto, mas pela disponibilidade: Se alguém usar o buscador Google será exposto a uma resposta gerada por Gemini... mas saiba usar os modelos para ampliar seu conhecimento ao invés de usá-lo para poupar trabalho pois o primeiro uso não é facilmente automatizável, já o segundo uso pode ser automatizado por um programa que faz CTRL-C no chat do LLM e faz CTRL-V no editor de texto que está com o programa aberto. A chance de quem faz o segundo uso ser dispensado é maior que a de quem faz o primeiro uso - estou exagerando em alguns pontos da história mas a preocupação em tornar-se dispensável não é exagero... Veja como pretendo usar LLMs na disciplina em https://github.com/FNakano/IP-Apostila/tree/main/UsarLLMs
+Antes de iniciar, usar *Large Language Models - LLMs* como ChatGPT, Gemini, Copilot, ... é inevitável pois eles estão amplamente disponíveis. Se alguém usar o buscador Google será exposto a uma resposta gerada por Gemini... mas saiba usar os modelos para ampliar seu conhecimento pois esse uso não é facilmente automatizável. Fazer tarefas automatizáveis aumenta a chance se sermos considerados dispensáveis. Estou exagerando em alguns pontos da história mas a preocupação em tornar-se dispensável não é exagero... Veja como pretendo usar LLMs na disciplina em https://github.com/FNakano/IP-Apostila/tree/main/UsarLLMs
 
 
 ## Preparação 
@@ -172,18 +174,22 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
  - o argumento de puts(...) - o que é
    - constante imediata (contrapor com constante declarada para o pré-processador e com constante declarada com palavra reservada `const`);
    - constante imediata do tipo string;
+   - a existência de variáveis tipadas e o tipo `char`;
+   - como strings são construídas a partir de `char`;
  - printf(...) - o que é
  - os argumentos de printf - o que são
    - constante imediata do tipo string
    - especificadores de formato
-   - variáveis
+   - variáveis - atribuição é diferente de equivalência matemática;
+     - existem tipos de variáveis;
  - melhorar o programa incluindo perguntar o nome e escrever o nome;
    - declarar variáveis
      - por que declarar string é feito com `char s[n]` 
      - complicações: codificação de caracteres 
    - a função `scanf(...)`
    - os argumentos de `scanf(...)`
-     - spoiler: quando se usa string (e certos outros tipos derivados) `scanf(...)` esconde uma complicação que vai aparecer na tarefa do questionário 
+     - spoiler: quando usa string `scanf(...)` esconde o conceito de ponteiros, que é importante em C.
+     - mas quando usa tipos primitivos, o uso de ponteiros aparece;
 1. Tarefa: criar uma calculadora de quatro operações interativa
   - apresentar tipos de dados numéricos: int, float, double
   - falar sobre truncamento, arredondamento e propagação de erros
@@ -191,6 +197,8 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
   - falar sobre string de formato do printf
   - apresentar o comando de seleção `if`
   - apresentar o comando de repetição `do..while`
+  - explicar, de forma simples, a necessidade do `&` no scanf ou o uso de `atof`, conforme o caso.
+    - o esperado é usar `double v; scanf ("%lf", &v);`
 2. Tarefa: automatizar a aplicação de um questionário;
  - começar com uma questão;
    - atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
@@ -201,8 +209,16 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
      - usar comandos de seleção para converter resposta em ponto; 
    - testar, por exemplo: o que acontece caso a resposta não seja válida?
    - melhorar o programa - **repetir** a pergunta **caso a resposta não seja válida**;
-   - o `&` nos argumentos de `scanf(...)` - primeiro contato com referências e ponteiros.
- - aplicar várias questões;
+   - o `&` nos argumentos de `scanf(...)`: referências e ponteiros.
+     - um modelo abstrato para a memória do computador: um array (tabela) de endereços e valores armazenados;
+       - entendendo este modelo para memória acredito que fica mais fácil entender `*` e `&`;
+       - (spoiler) entendendo este modelo para memória acredito que fica mais fácil entender `.` e `->` em `struct`;
+       - entender isto é importante para Algoritmos e Estruturas de Dados;
+     - asterisco `*` como modificador de tipo;
+     - asterisco `*` como operador;
+     - O operador `&` (e-comercial); 
+     - imprimindo ponteiros, usando "%p";
+ - aplicar várias questões (obs.: código-fonte em um só arquivo);
    - notar a **repetição** de comandos;
    - eliminar a **repetição** de comandos;
      - funções
@@ -213,15 +229,20 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
          - quando o argumento tem tipo derivado;
        - escopo de variáveis;
      - arrays de strings e strings como arrays de caracteres;
+       - usar arrays para armazenar o texto das questões;
+       - `malloc`, `calloc`, `realoc`, `free`;
      - trocar as questões sem recompilar o programa;
-     - fazer um log das perguntas, resposta, ...;
+       - caso 1: com as questões armazenadas em um array inicializado no código - desafio: criar uma função capaz de apresentar qualquer uma das questões, receber a resposta do usuário e retornar a resposta;
+       - caso 2: acrescentar a funcionalidade de ler e escrever perguntas em arquivo;
+       - caso 3: fazer um log das perguntas, respostas, ...;
 3. Expositivo: buscar e ordenar;
   - arrays de números inteiros;
   - dados-satélite e estruturas de dados;
+  - insertion-sort, de acordo com o livro de Análise de Algoritmos;
 4. Código-fonte em vários arquivos;
   - por quê? Módulos!;
   - make;
-5. Compreender o balizador;
+5. Compreender o Balizador;
 6. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
   - a função qsort da biblioteca stdlib;
   - ponteiro para funções;

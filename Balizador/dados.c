@@ -33,7 +33,7 @@ void imprimeArray(pessoa *array, int comprimentoDoArray) {
 	}
 }
 
-pessoa *leArray (char *filename) {
+int leArray (pessoa **p, char *filename) {
   FILE *fpIn;
   char linha[256];
   fpIn=fopen (filename, "rt");
@@ -50,6 +50,8 @@ pessoa *leArray (char *filename) {
     r[i].nota=atof (linha);
   }
   fclose(fpIn);
+  *p=r;
+  return comprimentoDoArray;
 }
 
 void destroiArray(pessoa *array) {
@@ -57,8 +59,9 @@ void destroiArray(pessoa *array) {
 }
 
 int main () {
-  int n=10;
-  pessoa *p=criaArray(n);
+  int n=0;
+  pessoa *p;
+  n=leArray(&p, "pessoas.csv");
   imprimeArray(p, n);
   return 0;
 }

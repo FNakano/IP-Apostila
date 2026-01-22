@@ -29,7 +29,7 @@ typedef struct Pessoa pessoa;
 
 pessoa *criaArray(int comprimentoDoArray); 
 void imprimeArray(pessoa *array, int comprimentoDoArray); 
-pessoa *leArray (char *filename);
+int leArray (pessoa **p, char *filename);
 void destroiArray(pessoa *array); 
 
 #endif
