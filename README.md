@@ -61,6 +61,8 @@ A atividade, por sua vez, é individual porque diz respeito àquilo que cada tra
 
 Voltando à específica tarefa de aprender/ensinar programação de computadores, alguns assuntos constam da ementa da disciplina (https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=ach2001). Espera-se que sejam apresentados, entre outros motivos, pela formação/organização de conhecimento, por influenciar outros assuntos dentro da disciplina e por abordar assuntos que serão tratados ou usados em outras disciplinas. Tomei a liberdade de organizar os assuntos da ementa em uma lista hierárquica, os índices da lista serão usados para referenciá-los:
 
+###### Lista de assuntos na ementa
+
 1. Noções de organização de computadores:
   1. modelo de von Neumann, (por uma questão do Markdown, precisei notar assim, mas este é o item 1.1)
   2. linguagens, 
@@ -245,14 +247,34 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 
 ## Método
 
-Inicia-se propondo que os estudantes executem um programa. O programa é fornecido em um arquivo, seja documentação, seja código-fonte. Após o sucesso na execução, ou os estudantes ou o professor usam LLM para aprender o que o programa faz e possam melhorar (avaliar, criticar, acrescentar informação) as respostas apresentadas pelo LLM, bem como aprimorar seus conhecimentos usando a resposta do LLM.
+Inicia-se propondo que os estudantes executem um programa (ié, uma tarefa). O programa é fornecido em um arquivo, seja documentação, seja código-fonte. Após o sucesso na execução, ou os estudantes ou o professor usam LLM para aprender o que o programa faz e possam melhorar (avaliar, criticar, acrescentar informação) as respostas apresentadas pelo LLM, bem como aprimorar seus conhecimentos usando a resposta do LLM.
 
 Em seguida são propostos desafios para incrementar os programas, é possível usar qualquer apoio disponível, inclusive e principalmente o apoio do docente. Também é importante mostrar a compreensão sobre os ajustes que fez no programa. Quando todos os desafios forem concluídos com sucesso, ou o tempo de aula tiver se esgotado, a atividade é terminada.
+
+O processo que inicia no recebimento da tarefa e termina no sucesso da execução **também** é denominado *ciclo de vida do programa* (https://en.wikipedia.org/wiki/Program_lifecycle_phase). Acredito que esse entendimento era o mais comum até lá pela década de 1980. Depois disso houve uma popularização da construção de software (programas), empresas construindo programas cada vez mais sofisticados e a larga adoção de métodos de engenharia de software para a construção dos programas. O entendimento mais comum passou a ser o apresentado em https://en.wikipedia.org/wiki/Systems_development_life_cycle .
+
+![](./Captura%20de%20tela%20de%202026-01-22%2013-49-02.png)
+FONTE: o autor
+captura de tela de https://en.wikipedia.org/wiki/Program_lifecycle_phase, para fins documentais pois está cada vez mais difícil acessar esse conteúdo.
+
+Nesse ciclo, fica claro que durante as tarefas, vamos:
+
+1. editar o código-fonte numa versão inicial, consertar erros, acrescentar funcionalidades
+2. compilar o código-fonte, linkar o código-objeto, criar o programa executável
+3. distribuir, instalar, carregar, executar o programa executável e
+4. repetir esses passos até que a execução do programa apresente um resultado satisfatório.
 
 Haverá tarefas que requerem explicações mais longas para serem compreendidas. Nestes casos, inicia-se com uma aula rápida (*briefing*) e segue-se o processo anterior.
 
 Haverá provas presenciais no estilo tradicional: papel e lápis, sem consulta, duração de 1h30min.
 
+## Tabela de cruzamento de referências
+
+Nesta tabela, os *assuntos a abordar em aula* são associados:
+- aos ítens da ementa (), 
+- às seções da documentação do padrão ISO da linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf)
+- às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+- aos tutoriais da W3Schools
  
 ## Anotações diversas
 
