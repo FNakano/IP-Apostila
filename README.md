@@ -64,7 +64,7 @@ Voltando à específica tarefa de aprender/ensinar programação de computadores
 ###### Lista de assuntos na ementa
 
 1. Noções de organização de computadores:
-    1. modelo de von Neumann, (por uma questão do Markdown, precisei notar assim, mas este é o item 1.1)
+    1. modelo de von Neumann, (por uma questão do Markdown, precisei notar assim. Na enumeração dos ítens, considere equivalente o uso de números, algarismos romanos e letras do alfabeto pois, dependendo da escolha do site para renderização de markdown isso muda...)
     2. linguagens, 
         1. interpretação e compilação,  (por uma questão do Markdown, precisei notar assim, mas este é o item 1.2.1)
     3. representação interna dos dados. 
