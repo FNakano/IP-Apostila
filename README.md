@@ -275,96 +275,96 @@ Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apo
 - às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
 - aos tutoriais da W3Schools (https://www.w3schools.com/c/index.php)
 
-`awk -v n=20 '{ print "|" substr($0, 1, n) "...| n3220 | GCC | W3Schools |"; }' toCut.txt`
+`awk -v n=20 '{ print "|" substr($0, 1, n) "...| ementa | n3220 | GCC | W3Schools |"; }' toCut.txt`
 
-| abordar em aula | n3220 | GCC | W3Schools |
-| --- | --- | --- | --- |
-|0. O primeiro progra...| n3220 | GCC | W3Schools |
-|  1. header file (#i...| n3220 | GCC | W3Schools |
-|    1. pré-processad...| n3220 | GCC | W3Schools |
-|      1. substituiçã...| n3220 | GCC | W3Schools |
-|  2. main() - o que ...| n3220 | GCC | W3Schools |
-|    1. funções...| n3220 | GCC | W3Schools |
-|      1. declaração ...| n3220 | GCC | W3Schools |
-|      2. protótipo (...| n3220 | GCC | W3Schools |
-|      3. corpo da fu...| n3220 | GCC | W3Schools |
-|      4. chamada de ...| n3220 | GCC | W3Schools |
-|  3. puts(...) - o q...| n3220 | GCC | W3Schools |
-|    1. o argumento d...| n3220 | GCC | W3Schools |
-|    2. constante ime...| n3220 | GCC | W3Schools |
-|    3. constante ime...| n3220 | GCC | W3Schools |
-|    4. a existência ...| n3220 | GCC | W3Schools |
-|  4. como strings sã...| n3220 | GCC | W3Schools |
-|  5. printf(...) - o...| n3220 | GCC | W3Schools |
-|    1. os argumentos...| n3220 | GCC | W3Schools |
-|    1. constante ime...| n3220 | GCC | W3Schools |
-|    2. especificador...| n3220 | GCC | W3Schools |
-|    3. variáveis - a...| n3220 | GCC | W3Schools |
-|  6. existem outros ...| n3220 | GCC | W3Schools |
-|  7. melhorar o prog...| n3220 | GCC | W3Schools |
-|    1. declarar vari...| n3220 | GCC | W3Schools |
-|    2. por que decla...| n3220 | GCC | W3Schools |
-|    3. complicações:...| n3220 | GCC | W3Schools |
-|    4. a função `sca...| n3220 | GCC | W3Schools |
-|      1. os argument...| n3220 | GCC | W3Schools |
-|      2. spoiler: qu...| n3220 | GCC | W3Schools |
-|      3. mas quando ...| n3220 | GCC | W3Schools |
-|1. Tarefa: criar uma...| n3220 | GCC | W3Schools |
-|  1. apresentar tipo...| n3220 | GCC | W3Schools |
-|  2. falar sobre tru...| n3220 | GCC | W3Schools |
-|  3. falar sobre str...| n3220 | GCC | W3Schools |
-|  4. falar sobre str...| n3220 | GCC | W3Schools |
-|  5. apresentar o co...| n3220 | GCC | W3Schools |
-|  6. apresentar o co...| n3220 | GCC | W3Schools |
-|  7. explicar, de fo...| n3220 | GCC | W3Schools |
-|    1. o esperado é ...| n3220 | GCC | W3Schools |
-|2. Tarefa: automatiz...| n3220 | GCC | W3Schools |
-|  1. começar com uma...| n3220 | GCC | W3Schools |
-|    1. atribuir pont...| n3220 | GCC | W3Schools |
-|      1. caracteres ...| n3220 | GCC | W3Schools |
-|        1. Por que é...| n3220 | GCC | W3Schools |
-|          1. Modelo ...| n3220 | GCC | W3Schools |
-|          2. Memória...| n3220 | GCC | W3Schools |
-|    2. usar comandos...| n3220 | GCC | W3Schools |
-|  2. testar, por exe...| n3220 | GCC | W3Schools |
-|  3. melhorar o prog...| n3220 | GCC | W3Schools |
-|  4. o `&` nos argum...| n3220 | GCC | W3Schools |
-|    1. um modelo abs...| n3220 | GCC | W3Schools |
-|      1. entendendo ...| n3220 | GCC | W3Schools |
-|      2. (spoiler) e...| n3220 | GCC | W3Schools |
-|      3. entender is...| n3220 | GCC | W3Schools |
-|    2. asterisco `*`...| n3220 | GCC | W3Schools |
-|    3. asterisco `*`...| n3220 | GCC | W3Schools |
-|    4. O operador `&...| n3220 | GCC | W3Schools |
-|    5. imprimindo po...| n3220 | GCC | W3Schools |
-|2. aplicar várias qu...| n3220 | GCC | W3Schools |
-|  1. notar a **repet...| n3220 | GCC | W3Schools |
-|  2. eliminar a **re...| n3220 | GCC | W3Schools |
-|    1. funções...| n3220 | GCC | W3Schools |
-|      1. passagem de...| n3220 | GCC | W3Schools |
-|        1. tipos de ...| n3220 | GCC | W3Schools |
-|          1. tipo de...| n3220 | GCC | W3Schools |
-|        2. quando o ...| n3220 | GCC | W3Schools |
-|        3. quando o ...| n3220 | GCC | W3Schools |
-|      2. escopo de v...| n3220 | GCC | W3Schools |
-|    2. arrays de str...| n3220 | GCC | W3Schools |
-|      1. usar arrays...| n3220 | GCC | W3Schools |
-|      2. `malloc`, `...| n3220 | GCC | W3Schools |
-|  3. trocar as quest...| n3220 | GCC | W3Schools |
-|    1. caso 1: com a...| n3220 | GCC | W3Schools |
-|    2. caso 2: acres...| n3220 | GCC | W3Schools |
-|    3. caso 3: fazer...| n3220 | GCC | W3Schools |
-|3. Expositivo: busca...| n3220 | GCC | W3Schools |
-|  1. arrays de númer...| n3220 | GCC | W3Schools |
-|  2. dados-satélite ...| n3220 | GCC | W3Schools |
-|  3. insertion-sort,...| n3220 | GCC | W3Schools |
-|4. Código-fonte em v...| n3220 | GCC | W3Schools |
-|  1. por quê? ... pa...| n3220 | GCC | W3Schools |
-|  2. make;...| n3220 | GCC | W3Schools |
-|5. Compreender o Bal...| n3220 | GCC | W3Schools |
-|6. Tarefa: comparar ...| n3220 | GCC | W3Schools |
-|  1. a função qsort ...| n3220 | GCC | W3Schools |
-|  2. ponteiro para f...| n3220 | GCC | W3Schools |
+| abordar em aula | ementa | n3220 | GCC | W3Schools |
+| --- | --- | --- | --- | --- |
+|0. O primeiro progra...| ementa | n3220 | GCC | W3Schools |
+|  1. header file (#i...| ementa | n3220 | GCC | W3Schools |
+|    1. pré-processad...| ementa | n3220 | GCC | W3Schools |
+|      1. substituiçã...| ementa | n3220 | GCC | W3Schools |
+|  2. main() - o que ...| ementa | n3220 | GCC | W3Schools |
+|    1. funções...| ementa | n3220 | GCC | W3Schools |
+|      1. declaração ...| ementa | n3220 | GCC | W3Schools |
+|      2. protótipo (...| ementa | n3220 | GCC | W3Schools |
+|      3. corpo da fu...| ementa | n3220 | GCC | W3Schools |
+|      4. chamada de ...| ementa | n3220 | GCC | W3Schools |
+|  3. puts(...) - o q...| ementa | n3220 | GCC | W3Schools |
+|    1. o argumento d...| ementa | n3220 | GCC | W3Schools |
+|    2. constante ime...| ementa | n3220 | GCC | W3Schools |
+|    3. constante ime...| ementa | n3220 | GCC | W3Schools |
+|    4. a existência ...| ementa | n3220 | GCC | W3Schools |
+|  4. como strings sã...| ementa | n3220 | GCC | W3Schools |
+|  5. printf(...) - o...| ementa | n3220 | GCC | W3Schools |
+|    1. os argumentos...| ementa | n3220 | GCC | W3Schools |
+|    1. constante ime...| ementa | n3220 | GCC | W3Schools |
+|    2. especificador...| ementa | n3220 | GCC | W3Schools |
+|    3. variáveis - a...| ementa | n3220 | GCC | W3Schools |
+|  6. existem outros ...| ementa | n3220 | GCC | W3Schools |
+|  7. melhorar o prog...| ementa | n3220 | GCC | W3Schools |
+|    1. declarar vari...| ementa | n3220 | GCC | W3Schools |
+|    2. por que decla...| ementa | n3220 | GCC | W3Schools |
+|    3. complicações:...| ementa | n3220 | GCC | W3Schools |
+|    4. a função `sca...| ementa | n3220 | GCC | W3Schools |
+|      1. os argument...| ementa | n3220 | GCC | W3Schools |
+|      2. spoiler: qu...| ementa | n3220 | GCC | W3Schools |
+|      3. mas quando ...| ementa | n3220 | GCC | W3Schools |
+|1. Tarefa: criar uma...| ementa | n3220 | GCC | W3Schools |
+|  1. apresentar tipo...| ementa | n3220 | GCC | W3Schools |
+|  2. falar sobre tru...| ementa | n3220 | GCC | W3Schools |
+|  3. falar sobre str...| ementa | n3220 | GCC | W3Schools |
+|  4. falar sobre str...| ementa | n3220 | GCC | W3Schools |
+|  5. apresentar o co...| ementa | n3220 | GCC | W3Schools |
+|  6. apresentar o co...| ementa | n3220 | GCC | W3Schools |
+|  7. explicar, de fo...| ementa | n3220 | GCC | W3Schools |
+|    1. o esperado é ...| ementa | n3220 | GCC | W3Schools |
+|2. Tarefa: automatiz...| ementa | n3220 | GCC | W3Schools |
+|  1. começar com uma...| ementa | n3220 | GCC | W3Schools |
+|    1. atribuir pont...| ementa | n3220 | GCC | W3Schools |
+|      1. caracteres ...| ementa | n3220 | GCC | W3Schools |
+|        1. Por que é...| ementa | n3220 | GCC | W3Schools |
+|          1. Modelo ...| ementa | n3220 | GCC | W3Schools |
+|          2. Memória...| ementa | n3220 | GCC | W3Schools |
+|    2. usar comandos...| ementa | n3220 | GCC | W3Schools |
+|  2. testar, por exe...| ementa | n3220 | GCC | W3Schools |
+|  3. melhorar o prog...| ementa | n3220 | GCC | W3Schools |
+|  4. o `&` nos argum...| ementa | n3220 | GCC | W3Schools |
+|    1. um modelo abs...| ementa | n3220 | GCC | W3Schools |
+|      1. entendendo ...| ementa | n3220 | GCC | W3Schools |
+|      2. (spoiler) e...| ementa | n3220 | GCC | W3Schools |
+|      3. entender is...| ementa | n3220 | GCC | W3Schools |
+|    2. asterisco `*`...| ementa | n3220 | GCC | W3Schools |
+|    3. asterisco `*`...| ementa | n3220 | GCC | W3Schools |
+|    4. O operador `&...| ementa | n3220 | GCC | W3Schools |
+|    5. imprimindo po...| ementa | n3220 | GCC | W3Schools |
+|2. aplicar várias qu...| ementa | n3220 | GCC | W3Schools |
+|  1. notar a **repet...| ementa | n3220 | GCC | W3Schools |
+|  2. eliminar a **re...| ementa | n3220 | GCC | W3Schools |
+|    1. funções...| ementa | n3220 | GCC | W3Schools |
+|      1. passagem de...| ementa | n3220 | GCC | W3Schools |
+|        1. tipos de ...| ementa | n3220 | GCC | W3Schools |
+|          1. tipo de...| ementa | n3220 | GCC | W3Schools |
+|        2. quando o ...| ementa | n3220 | GCC | W3Schools |
+|        3. quando o ...| ementa | n3220 | GCC | W3Schools |
+|      2. escopo de v...| ementa | n3220 | GCC | W3Schools |
+|    2. arrays de str...| ementa | n3220 | GCC | W3Schools |
+|      1. usar arrays...| ementa | n3220 | GCC | W3Schools |
+|      2. `malloc`, `...| ementa | n3220 | GCC | W3Schools |
+|  3. trocar as quest...| ementa | n3220 | GCC | W3Schools |
+|    1. caso 1: com a...| ementa | n3220 | GCC | W3Schools |
+|    2. caso 2: acres...| ementa | n3220 | GCC | W3Schools |
+|    3. caso 3: fazer...| ementa | n3220 | GCC | W3Schools |
+|3. Expositivo: busca...| ementa | n3220 | GCC | W3Schools |
+|  1. arrays de númer...| ementa | n3220 | GCC | W3Schools |
+|  2. dados-satélite ...| ementa | n3220 | GCC | W3Schools |
+|  3. insertion-sort,...| ementa | n3220 | GCC | W3Schools |
+|4. Código-fonte em v...| ementa | n3220 | GCC | W3Schools |
+|  1. por quê? ... pa...| ementa | n3220 | GCC | W3Schools |
+|  2. make;...| ementa | n3220 | GCC | W3Schools |
+|5. Compreender o Bal...| ementa | n3220 | GCC | W3Schools |
+|6. Tarefa: comparar ...| ementa | n3220 | GCC | W3Schools |
+|  1. a função qsort ...| ementa | n3220 | GCC | W3Schools |
+|  2. ponteiro para f...| ementa | n3220 | GCC | W3Schools |
 
 
 
