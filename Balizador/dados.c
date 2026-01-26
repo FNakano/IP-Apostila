@@ -35,19 +35,19 @@ void imprimeArray(pessoa *array, int comprimentoDoArray) {
 
 int leArray (pessoa **p, char *filename) {
   FILE *fpIn;
-  char linha[256];
+  char linha[256], *tok;
   fpIn=fopen (filename, "rt");
   int comprimentoDoArray=0;
   fscanf (fpIn, "%d ", &comprimentoDoArray);
 	pessoa *r=malloc(sizeof(pessoa)*comprimentoDoArray);
   for (int i=0;i<comprimentoDoArray; i++) {
     fgets (linha, 255, fpIn);
-    strtok (linha, ",\n");
-    strcpy (r[i].nome, linha);
-    strtok (linha, ",\n");
-    r[i].tipoQuestionario= linha[0];
-    strtok (linha, ",\n");
-    r[i].nota=atof (linha);
+    tok=strtok (linha, ",\n");
+    strcpy (r[i].nome, tok);
+    tok=strtok (NULL, " ,\n");
+    r[i].tipoQuestionario= *tok;
+    tok=strtok (NULL, ",\n");
+    r[i].nota=atof (tok);
   }
   fclose(fpIn);
   *p=r;

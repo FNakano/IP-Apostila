@@ -63,8 +63,8 @@ Voltando à específica tarefa de aprender/ensinar programação de computadores
 
 ###### Lista de assuntos na ementa
 
-1. Noções de organização de computadores:
-    1. modelo de von Neumann, (por uma questão do Markdown, precisei notar assim. Na enumeração dos ítens, considere equivalente o uso de números, algarismos romanos e letras do alfabeto pois, dependendo da escolha do site para renderização de markdown isso muda...)
+1. Noções de organização de computadores: <a name="my-custom-anchor"></a>
+    1. <a name="vonneumann">modelo de von Neumann, (por uma questão do Markdown, precisei notar assim. Na enumeração dos ítens, considere equivalente o uso de números, algarismos romanos e letras do alfabeto pois, dependendo da escolha do site para renderização de markdown isso muda...)</a>
     2. linguagens, 
         1. interpretação e compilação,  (por uma questão do Markdown, precisei notar assim, mas este é o item 1.2.1)
     3. representação interna dos dados. 
@@ -153,6 +153,7 @@ Tutoriais são documentos que apresentam a sequência de passos usada para ating
 Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam esta apostila. Para apresentar um tutorial útil:
 
 - É possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa escrito em linguagem C.
+- Code:Blocks é um ambiente integrado de desenvolvimento que pode ser usado para escrever programas em C. Em https://www.w3schools.com/c/c_getstarted.php W3Schools ofrece alguma instrução sobre como usá-lo.  
 
 ## Sequência de assuntos a abordar em aula
 
@@ -196,6 +197,14 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
     6. apresentar o comando de repetição `do..while`
     7. explicar, de forma simples, a necessidade do `&` no scanf ou o uso de `atof`, conforme o caso.
         1. o esperado é usar `double v; scanf ("%lf", &v);`
+    8. Erros, mensagens e depuração
+        1. Em muitas funções os valores de retorno indicam erros - teste-os;
+            1. por exemplo, veja `scanf()`;
+            2. por exemplo, veja `fopen()` e `perror()`;
+        2. Use mensagens `puts`, `printf`, ...;
+        3. C não tem `try...catch`;
+        4. IDEs costumam oferecer *break points*;
+        5. A ferramenta de depuração de GCC chama-se `gdb`; 
 2. Tarefa: automatizar a aplicação de um questionário;
     1. começar com uma questão;
         1. atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
@@ -275,7 +284,7 @@ Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apo
 - às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
 - aos tutoriais da W3Schools (https://www.w3schools.com/c/index.php)
 
-`awk -v n=20 '{ print "|" substr($0, 1, n) "...| ementa | n3220 | GCC | W3Schools |"; }' toCut.txt`
+`awk -v n=20 '{ print "| <pre>" substr($0, 1, n) "...</pre>| ementa | n3220 | GCC | W3Schools |"; }' toCut.txt`
 
 | abordar em aula | ementa | n3220 | GCC | W3Schools |
 | --- | --- | --- | --- | --- |
