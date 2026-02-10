@@ -21,16 +21,45 @@ Gabriel Dias Barbosa, B, 7.713577
 Bianca Mendonça Gonçalves, E, 2.833147
 Alexandre Alcoforado Moraes, A, 9.493271
 <font color="#8AE234"><b>fabio@super</b></font>:<font color="#729FCF"><b>~/MeuGithub/IP-Apostila/Balizador</b></font>$ </pre>
-
+- 2026-02-10 Propostas de bricadeiras (ié análise exploratória): 
+  - Acrescentar nomes e verificar que são usados
+  - Generalizar a função de ordenação para que aceite qualquer estrutura
+     - Implementar/Medir o impacto de ordenar um array de estruturas versus ordenar um array de ponteiros para estruturas.
 
 ## Como instalar
 
+Copie todos os arquivos para um diretório em seu computador.
+
 ## Como compilar
+
+Veja no Makefile (péssima resposta essa...)
 
 ## Como executar o teste
 
+Veja no Makefile
+
 ## Como usar
+
+Os arquivos com prefixo *teste* contém apenas a função `main` que chama (testa) algumas funções codificadas em `dados.c` e em `insertionSort.c`.
+
+Para compilar os testes, use `make teste1`, `make teste2` e `make testeOrdena`.
+
+Para compilar os testes e executá-los, use `make executaTeste1`, `make executaTeste2`, `make executaTesteOrdena`.
 
 ## Como está organizado
 
+`dados.c` contém o código-fonte das funções que alocam, de-alocam, leem e escrevem na tela ou em um arquivo o conteúdo da estrutura de dados que representa uma pessoa. A estrutura de dados é definida em `dados.h`.
+
+```c
+struct Pessoa {
+  char nome[128];
+  char tipoQuestionario;
+  double nota;
+};
+
+```
+
+A estrutura de dados foi idealizada para conter informação sobre respondentes de questionários. Há alguns tipos de questionários e é atribuída uma nota para as respostas do respondente ao questionário.
+
+`insertionSort.c` contém uma adaptação do algoritmo Insertion-Sort apresentado em **Cormen, Leisserson, Rivest, Stein** - Introduction to Algorithms - 3a. Ed. p.26
 

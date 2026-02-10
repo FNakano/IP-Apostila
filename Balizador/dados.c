@@ -58,6 +58,7 @@ void destroiArray(pessoa *array) {
 	free(array);
 }
 
+/* comentei e passei para outro arquivo depois de ajustar o ordenador.
 int main () {
   int n=0;
   pessoa *p;
@@ -65,3 +66,4 @@ int main () {
   imprimeArray(p, n);
   return 0;
 }
+*/

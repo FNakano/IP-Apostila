@@ -7,9 +7,17 @@ Apostila de FNakano para IP
 
 "Tudo pode mudar..."
 
+Compreender algo é um processo que acontece progressivamente, por partes e depende do aspecto (desse algo) que atrai mais atenção do agente (que quer compreender). Considerando *algo* um objeto (acredito que seja uma consideração verdadeira...)
+
+> O objeto da representação não pode ser outra coisa senão uma representação da qual a primeira representação é um interpretante. Mas uma série infinita de representações, cada qual representando a que está atrás de si, pode ser concebida como tendo um objeto no seu limite. O significado de uma representação não pode ser senão uma representação. De fato, não é nada mais do que a representação, ela mesma, concebida como despida de roupagem irrelevante. Mas essa roupagem não pode ser nunca completamente despida; ela só é trocada por algo mais diáfano. Há, assim, uma regressão infinita aí (1.339) (J. Ransdell, 1966, pp. 34-5 APUD Lucia Santaella, A Teoria Geral dos Signos, 2000, ISBN 85-221-0224-4)
+
+Se a afirmação citada acima for verdadeira, ensinar/aprender, compreender e processos afins são infinitos e (quase) sempre há uma resposta diferente e aceitável a perguntas: "Como?" ou "Por quê?" em sequência.
+
+No que se refere a programas (de computador), estes frequentemente contém/manipulam representações de objetos e *despir de roupagem irrelevante* equivale a abstrair (*abstract out*).
+
 ## O "tom" da conversa nas aulas
  
-Gostaria de iniciar dando o contexto que desejo nesta disciplina: "Uma conversa gentil tratando os assuntos com ceticismo científico".
+Peço a todos que considerem as aulas *Uma conversa gentil tratando os assuntos com ceticismo científico*.
 
 A *conversa gentil* refere-se a:
   
@@ -122,7 +130,7 @@ Acho que é aí que entram os indicadores: avaliações, exercícios, notas, ...
 
 O processo de ensinar/aprender e testar através de indicadores, mesmo para um não-pesquisador no assunto (como eu), tem falhas. Argumentar que "é o melhor que se tem", por ser usado há séculos, por "dar resultado", ... não me satisfaz, em termos do tal ceticismo científico, mas a necessidade prática sempre urge, então "o melhor que se tem" é o que acabo usando...
 
-O indicador que usarei para balizar o processo de ensinar/aprender (mas não o de avaliar) é "Compreender, com detalhes e vocabulário suficiente para Introdução a Programação, um [específico programa](./Balizador), após 3/4 do prazo dado (semestre).". Acredito que isto indicará que aprendeu-se o suficiente para compreender os programas/algoritmos que serão apresentados nas próximas disciplinas, sem ocupar-se em demasia com aspectos de programação como sintaxe, declaração de variáveis e outros - ocupar-se em aprender o aspecto do assunto apropriado na próxima disciplina. Por exemplo, em análise de algoritmos, dado um programa/algoritmo, perguntar-se qual a complexidade assintótica ao invés de perguntar-se onde as variáveis precisam ser declaradas.
+O indicador que usarei para balizar o processo de ensinar/aprender (mas não o de avaliar) é "Compreender e criticar/melhorar, com detalhes e vocabulário suficiente para Introdução a Programação, um [específico programa](./Balizador) e a forma como foi desenvolvido." O prazo ideal para isto é  3/4 do semestre. Acredito que isto indicará que aprendeu-se o suficiente para compreender os programas/algoritmos que serão apresentados nas próximas disciplinas, sem ocupar-se em demasia com aspectos de programação como sintaxe, declaração de variáveis e outros - ocupar-se em aprender o aspecto do assunto apropriado na próxima disciplina. Por exemplo, em análise de algoritmos, dado um programa/algoritmo, perguntar-se qual a complexidade assintótica ao invés de perguntar-se onde as variáveis precisam ser declaradas.
 
 Caso o objetivo fosse compreender o específico programa, eu acharia adequado partir para sua análise até o nível de detalhamento necessário, mas esta seria uma estratégia de mínimo esforço para satisfazer o indicador, que é algo muito limitado. O objetivo é construir nosso conhecimento para compreender o específico programa e outros que virão durante nossa vida. Na próxima seção, inicia-se o processo de contrução.
 
@@ -188,9 +196,14 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
             1. os argumentos de `scanf(...)`
             2. spoiler: quando usa string `scanf(...)` esconde o conceito de ponteiros, que é importante em C.
             3. mas quando usa tipos primitivos, o uso de ponteiros aparece;
+    8. Comentários e documentação do código-fonte
 1. Tarefa: criar uma calculadora de quatro operações interativa
     1. apresentar tipos de dados numéricos: int, float, double
-    2. falar sobre truncamento, arredondamento e propagação de erros
+        1. falar sobre truncamento, arredondamento e propagação de erros
+        2. conversão implícita
+        3. type cast
+        4. funções de conversão de tipos (ex.: `atof()`)
+    2. tipos primitivos estendidos
     3. falar sobre string de formato e valor de retorno do scanf, mencionar *parsing*
     4. falar sobre string de formato do printf
     5. apresentar o comando de seleção `if`
@@ -220,7 +233,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
             1. entendendo este modelo para memória acredito que fica mais fácil entender `*` e `&`;
             2. (spoiler) entendendo este modelo para memória acredito que fica mais fácil entender `.` e `->` em `struct`;
             3. entender isto é importante para Algoritmos e Estruturas de Dados;
-        2. asterisco `*` como modificador de tipo;
+        2. asterisco `*` como modificador de tipo em uma declaração;
         3. asterisco `*` como operador;
         4. O operador `&` (e-comercial); 
         5. imprimindo ponteiros, usando "%p";
@@ -252,6 +265,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 6. Tarefa: comparar tempo de execução de diferentes algoritmos de ordenação.
     1. a função qsort da biblioteca stdlib;
     2. ponteiro para funções;
+7. Tarefa: ajustar o Balizador para a função de ordenação poder ser usada em qualquer array (ié, fazer igual a `qsort(...)`)
 
 ## Método
 
@@ -281,7 +295,7 @@ Haverá provas presenciais no estilo tradicional: papel e lápis, sem consulta, 
 Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apostila?tab=readme-ov-file#sequ%C3%AAncia-de-assuntos-a-abordar-em-aula) são associados:
 - aos assuntos da ementa (https://github.com/FNakano/IP-Apostila?tab=readme-ov-file#lista-de-assuntos-na-ementa), 
 - às seções da documentação do padrão ISO da linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf)
-- às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+- às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html), do guia de referência do pré-processador C (https://gcc.gnu.org/onlinedocs/cpp/index.html) e da biblioteca glibc (https://www.gnu.org/savannah-checkouts/gnu/libc/index.html)
 - aos tutoriais da W3Schools (https://www.w3schools.com/c/index.php)
 
 `awk -v n=20 '{ print "| <pre>" substr($0, 1, n) "...</pre>| ementa | n3220 | GCC | W3Schools |"; }' toCut.txt`
