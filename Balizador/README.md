@@ -32,11 +32,15 @@ Copie todos os arquivos para um diretório em seu computador.
 
 ## Como compilar
 
+Para compilar os testes, use `make teste1`, `make teste2` e `make testeOrdena`.
+
 Veja no Makefile (péssima resposta essa...)
 
 ## Como executar o teste
 
-Veja no Makefile
+Para compilar os testes e executá-los, use `make executaTeste1`, `make executaTeste2`, `make executaTesteOrdena`.
+
+(Veja no Makefile)
 
 ## Como usar
 
