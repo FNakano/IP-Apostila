@@ -292,11 +292,15 @@ Haverá provas presenciais no estilo tradicional: papel e lápis, sem consulta, 
 
 ## Tabela de cruzamento de referências
 
-Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apostila?tab=readme-ov-file#sequ%C3%AAncia-de-assuntos-a-abordar-em-aula) são associados:
+
+https://docs.google.com/spreadsheets/d/1KvNanKVZJ57i2kJhjOUuWH68qgjsg99MMEVAcrzuT4g/edit?usp=sharing Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apostila?tab=readme-ov-file#sequ%C3%AAncia-de-assuntos-a-abordar-em-aula) são associados:
 - aos assuntos da ementa (https://github.com/FNakano/IP-Apostila?tab=readme-ov-file#lista-de-assuntos-na-ementa), 
 - às seções da documentação do padrão ISO da linguagem C (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf)
 - às seções do guia de referência para a linguagem C implementada no GCC (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html), do guia de referência do pré-processador C (https://gcc.gnu.org/onlinedocs/cpp/index.html) e da biblioteca glibc (https://www.gnu.org/savannah-checkouts/gnu/libc/index.html)
 - aos tutoriais da W3Schools (https://www.w3schools.com/c/index.php)
+
+
+### Versão anterior da tabela mantida para documentar a evolução da apostila - esta não é mais atualizada
 
 `awk -v n=20 '{ print "| <pre>" substr($0, 1, n) "...</pre>| ementa | n3220 | GCC | W3Schools |"; }' toCut.txt`
 
