@@ -218,7 +218,11 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
         3. C não tem `try...catch`;
         4. IDEs costumam oferecer *break points*;
         5. A ferramenta de depuração de GCC chama-se `gdb`; 
-2. Tarefa: automatizar a aplicação de um questionário;
+2. Simulador - Monty's game (com quatro portas);
+3. Numéricos - [raiz quadrada](./numericos.md) ;
+  - Bissecção (prefiro a grafia muito muito antiga, reconheço que, pelas normas vigentes, está errada...)
+  - Newton
+2. ~~Tarefa: automatizar a aplicação de um questionário;~~
     1. começar com uma questão;
         1. atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
             1. caracteres comparados a strings: variável de tipo primitivo comparado a variável de tipo derivado;
@@ -237,7 +241,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
         3. asterisco `*` como operador;
         4. O operador `&` (e-comercial); 
         5. imprimindo ponteiros, usando "%p";
-2. aplicar várias questões (obs.: código-fonte em um só arquivo);
+2. ~~aplicar várias questões (obs.: código-fonte em um só arquivo);~~
     1. notar a **repetição** de comandos;
     2. eliminar a **repetição** de comandos;
         1. funções
@@ -254,6 +258,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
         1. caso 1: com as questões armazenadas em um array inicializado no código - desafio: criar uma função capaz de apresentar qualquer uma das questões, receber a resposta do usuário e retornar a resposta;
         2. caso 2: acrescentar a funcionalidade de ler e escrever perguntas em arquivo;
         3. caso 3: fazer um log das perguntas, respostas, ...;
+4. Structs e unions, malloc, arquivos;
 3. Expositivo: buscar e ordenar;
     1. arrays de números inteiros;
     2. dados-satélite e estruturas de dados;
