@@ -258,7 +258,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
         1. caso 1: com as questões armazenadas em um array inicializado no código - desafio: criar uma função capaz de apresentar qualquer uma das questões, receber a resposta do usuário e retornar a resposta;
         2. caso 2: acrescentar a funcionalidade de ler e escrever perguntas em arquivo;
         3. caso 3: fazer um log das perguntas, respostas, ...;
-4. Structs e unions, malloc, arquivos;
+4. Memória, structs e unions, malloc, arquivos;
 3. Expositivo: buscar e ordenar;
     1. arrays de números inteiros;
     2. dados-satélite e estruturas de dados;
