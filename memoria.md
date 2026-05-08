@@ -1,4 +1,4 @@
-# Memória do computador (RAM) e suas representações
+# Memória do computador (RAM) e representações associadas
 
 No nível de um primeiro curso de programação em C, após praticar o básico sobre variáveis, operações, comandos e funções, acredito que conhecer um modelo (abstrato) de memória e seu uso nos programas seja útil.
 

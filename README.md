@@ -88,7 +88,7 @@ Voltando à específica tarefa de aprender/ensinar programação de computadores
 9. Introdução a algoritmos de busca e ordenação. 
 10. Manipulação de referências.
 
-Passo a enunciar o problema como: "Aprender/ensinar programação de computadores em 17 a 19 semanas, abordando suficientemente os assuntos listados na ementa".
+Passo a enunciar o problema como: "Aprender/ensinar programação de computadores em 17 a 19 semanas, abordando os assuntos listados na ementa o suficiente para avançar para as disciplinas que dependem desta".
 
 ## Estratégias de ensino/aprendizagem
 
@@ -163,7 +163,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 - É possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa escrito em linguagem C.
 - Code:Blocks é um ambiente integrado de desenvolvimento que pode ser usado para escrever programas em C. Em https://www.w3schools.com/c/c_getstarted.php W3Schools ofrece alguma instrução sobre como usá-lo.  
 
-## Sequência de assuntos a abordar em aula
+## Sequência de assuntos a abordar em aula (revisado em 2026-05-08)
 
 
 0. O primeiro programa em C (https://en.wikipedia.org/wiki/C_(programming_language)#%22Hello,_world%22_example)
@@ -171,7 +171,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
         1. pré-processador
             1. substituição de texto;
     2. main() - o que é
-        1. funções
+        1. funções (primeiro contato)
             1. declaração de função;
             2. protótipo (assinatura) de função;
             3. corpo da função;
@@ -222,43 +222,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 3. Numéricos - [raiz quadrada](./numericos.md) ;
   - Bissecção (prefiro a grafia muito muito antiga, reconheço que, pelas normas vigentes, está errada...)
   - Newton
-2. ~~Tarefa: automatizar a aplicação de um questionário;~~
-    1. começar com uma questão;
-        1. atribuir pontos às respostas possíveis, apresentar a pontuação obtida em uma particular execução do programa;
-            1. caracteres comparados a strings: variável de tipo primitivo comparado a variável de tipo derivado;
-                1. Por que é assim? ... porque computadores são assim:
-                    1. Modelo de Von Neumann;
-                    2. Memória do computador (RAM);
-        2. usar comandos de seleção para converter resposta em ponto; 
-    2. testar, por exemplo: o que acontece caso a resposta não seja válida?
-    3. melhorar o programa - **repetir** a pergunta **caso a resposta não seja válida**;
-    4. o `&` nos argumentos de `scanf(...)`: referências e ponteiros.
-        1. um modelo abstrato para a memória do computador: um array (tabela) de endereços e valores armazenados;
-            1. entendendo este modelo para memória acredito que fica mais fácil entender `*` e `&`;
-            2. (spoiler) entendendo este modelo para memória acredito que fica mais fácil entender `.` e `->` em `struct`;
-            3. entender isto é importante para Algoritmos e Estruturas de Dados;
-        2. asterisco `*` como modificador de tipo em uma declaração;
-        3. asterisco `*` como operador;
-        4. O operador `&` (e-comercial); 
-        5. imprimindo ponteiros, usando "%p";
-2. ~~aplicar várias questões (obs.: código-fonte em um só arquivo);~~
-    1. notar a **repetição** de comandos;
-    2. eliminar a **repetição** de comandos;
-        1. funções
-            1. passagem de argumentos;
-                1. tipos de variável: primitivo e derivado (n3220 sec. 6.2.5)
-                    1. tipo derivado -> referência -> ponteiro
-                2. quando o argumento tem tipo primitivo;
-                3. quando o argumento tem tipo derivado;
-            2. escopo de variáveis;
-        2. arrays de strings e strings como arrays de caracteres;
-            1. usar arrays para armazenar o texto das questões;
-            2. `malloc`, `calloc`, `realoc`, `free`;
-    3. trocar as questões sem recompilar o programa;
-        1. caso 1: com as questões armazenadas em um array inicializado no código - desafio: criar uma função capaz de apresentar qualquer uma das questões, receber a resposta do usuário e retornar a resposta;
-        2. caso 2: acrescentar a funcionalidade de ler e escrever perguntas em arquivo;
-        3. caso 3: fazer um log das perguntas, respostas, ...;
-4. Memória, structs e unions, malloc, arquivos;
+4. Memória, structs e unions, malloc, arquivos - [memoria.md](./memoria.md), funções - segundo contato;
 3. Expositivo: buscar e ordenar;
     1. arrays de números inteiros;
     2. dados-satélite e estruturas de dados;
@@ -295,7 +259,7 @@ Haverá tarefas que requerem explicações mais longas para serem compreendidas.
 
 Haverá provas presenciais no estilo tradicional: papel e lápis, sem consulta, duração de 1h30min.
 
-## Tabela de cruzamento de referências
+## Tabela de cruzamento de referências (ainda não revisado em 2026-05-08)
 
 
 https://docs.google.com/spreadsheets/d/1KvNanKVZJ57i2kJhjOUuWH68qgjsg99MMEVAcrzuT4g/edit?usp=sharing Nesta tabela, os *assuntos a abordar em aula* (https://github.com/FNakano/IP-Apostila?tab=readme-ov-file#sequ%C3%AAncia-de-assuntos-a-abordar-em-aula) são associados:
