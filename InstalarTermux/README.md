@@ -147,6 +147,19 @@ Ocorreu um erro nessa particular instalação do Termux ao tentar abrir com o Ar
  
 ![](./5064575274980150055.jpg)
 
+### Outros pacotes úteis
+
+Referencio a documentação das funções das bibliotecas padrão de C mas esta documentação não é instalada no Termux. Para instalá-la use estes dois comandos no Termux:
+
+```
+pkg install man
+pkg install linux-man-pages
+```
+
+Também uso Git (esta apostila está no Github...) para instalar Git: `pkg install git`
+
+
+
 ## Conclusão e discussão
 
 Neste tutorial mostra-se, passo a passo, como preparar e usar um telefone celular como estação de trabalho para o programador.
