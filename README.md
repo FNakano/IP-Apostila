@@ -222,7 +222,7 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 3. Numéricos - [raiz quadrada](./numericos.md) ;
   - Bissecção (prefiro a grafia muito muito antiga, reconheço que, pelas normas vigentes, está errada...)
   - Newton
-4. Memória, structs e unions, malloc, arquivos - [memoria.md](./memoria.md), funções - segundo contato;
+4. arrays e matrizes em detalhes - [matrizes](./matrizes/float.c) -, memória, structs e unions, malloc, arquivos - [memoria.md](./memoria.md), funções - segundo contato;
 3. Expositivo: buscar e ordenar;
     1. arrays de números inteiros;
     2. dados-satélite e estruturas de dados;

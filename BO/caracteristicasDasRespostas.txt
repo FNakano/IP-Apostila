@@ -1,0 +1,173 @@
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Sabe usar referências para retornar mais de um valor;
+Fez o passo a passo pedido;
+10
+
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Apresenta o array em ordem decrescente;
+Quase fez o passo a passo pedido;
+8
+
+Programa compila, executa mas não apresenta o resultado esperado para o exemplo que foi codificado.
+incompleto (vou avaliar quão incompleto e atribuir nota...);
+Seguiu quase o passo a passo pedido mas atrapalhou-se para encapsular a busca (que acho que funcionou em algum momento). As dúvidas sobre o uso de funções poderia ter aparecido quando separasse a impressão (na tela) dos elementos do array (pulou essa etapa);
+3
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Soube ajustar o programa para buscar o menor e deixar a ordenação em ordem crescente;
+Soube ajustar para passar o índice do início do trecho a ordenar do array.
+Fez o passo a passo pedido;
+10
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Entregou um bubble sort, o código entregue não permite avaliar quanto sabe sobre funções e parâmetros.
+Não fez o passo a passo pedido;
+5
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+incompleto (vou avaliar quão incompleto e atribuir nota...);
+Código bastante claro. 
+Codificou a busca mas parece ter preferido não se aventurar a usar funções, não há indicação que tenha tentado ampliar o programa para um ordenador...
+3
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Quase fez o passo a passo pedido; desconto por isso
+Usou int local = tamanho - (i+1); poderia ter usado um loop com índice decrescente ok, sem desconto por isso.
+Usou setlocale(LC_ALL, "Portuguese"); - isto influencia na maneira como scanf trata sinais de separação (vírgula, ponto) não seria necessário aqui. ok, sem desconto por isso.
+8
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Quase fez o passo a passo pedido; desconto por isso
+Na função int buscaMaior (int x[], int length, int y) usou o argumento y como indexador em  for (y; y < length; y++) isso não é muito usual. o argumento y é o índice do primeiro elemento do array onde buscar o maior. Poderia ser mais conveniente chamá-lo "inicio"... sem desconto por isso.
+Como troca o maior com o primeiro elemento do array onde busca o maior, o array fica em ordem decrescente. ok, sem desconto por isso, mas tenho um desafio: como modificar o programa para ordenar em ordem crescente?
+8
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Quase fez o passo a passo pedido; desconto por isso
+A variável que armazena o tamanho do array vai sendo mudada à medida que o programa é executado - isso não é adequado - sem desconto por isso pois estou apresentando isso agora.
+O tamanho do array está "espalhado" em constantes (literais) dentro das funções - isso também não é adequado - sem desconto por isso pois estou apresentando isso agora.
+8
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Quase fez o passo a passo pedido; desconto por isso
+Como troca o maior com o primeiro elemento do array onde busca o maior, o array fica em ordem decrescente. ok, sem desconto por isso, mas tenho um desafio: como modificar o programa para ordenar em ordem crescente?
+8
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Entregou um bubble sort, o código entregue não permite avaliar quanto sabe sobre funções e parâmetros.
+Não fez o passo a passo pedido;
+Tem um acréscimo porque escreveu a função que lista os elementos do array (então sabe algo sobre funções e parâmetros) e sabe usar protótipos para poder definir as funções depois de main().
+7
+
+Bom programa, mas não entregou a função que imprime o array na tela... preferiu replicar os comandos dentro de main()...
+9.5
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Entregou um bubble sort, o código entregue não permite avaliar quanto sabe sobre funções e parâmetros.
+Não fez o passo a passo pedido;
+5
+Tem um adicional por ter codificado a função que imprime os elementos do array.
+6
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Entregou um bubble sort, o código entregue não permite avaliar quanto sabe sobre funções e parâmetros.
+Não fez o passo a passo pedido;
+5
+Tem um adicional pelo capricho em codificar a entrada de dados e por mencionar que conversou comigo, embora o código entregue, a mim, não parece ter sido influenciado por tal conversa...
+6
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Sabe usar protótipos;
+Sabe usar variáveis globais e variáveis locais;
+Fez o passo a passo pedido;
+10
+
+Na compilação apresenta erro:
+<pre><font color="#8AE234"><b>fabio@super</b></font>:<font color="#729FCF"><b>~/Downloads</b></font>$ gcc gt.c
+<b>gt.c:</b> In function ‘<b>selectionSort</b>’:
+<b>gt.c:25:45:</b> <font color="#EF2929"><b>error: </b></font>expected expression before ‘<b>]</b>’ token
+   25 |         int posicaoMaior = buscaMaior(array[<font color="#EF2929"><b>]</b></font>, n);
+      |                                             <font color="#EF2929"><b>^</b></font>
+<b>gt.c:</b> In function ‘<b>main</b>’:
+<b>gt.c:41:25:</b> <font color="#EF2929"><b>error: </b></font>void value not ignored as it ought to be
+   41 |     int arrayOrdenada = <font color="#EF2929"><b>selectionSort</b></font>(lista, n);
+      |                         <font color="#EF2929"><b>^~~~~~~~~~~~~</b></font>
+<font color="#8AE234"><b>fabio@super</b></font>:<font color="#729FCF"><b>~/Downloads</b></font>$ 
+</pre>
+Corrigindo os erros, consegue buscar o maior mas ainda não ordena (acho que é por pouco, deixo para você encontrar...).
+A função contaElementos (...) retorna sempre n, como no processo imprime os valores, imagino que seja a função de impressão.
+3
+
+Comentário:
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Quase fez o passo a passo pedido; desconto por isso
+Codificou um bubble sort, provavelmente conseguiu construir pois o uso que fez dos comandos de repetição e das variáveis não é comum (sem desconto por isso).
+8
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Fez o passo a passo pedido;
+10
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Fez o passo a passo pedido;
+Buscou o menor elemento e ordenou em ordem crescente, para isso precisou incluir o índice do primeiro elemento do array como parâmetro - ok.
+10
+
+A função imprimir() está ok, mas o restante não se parece com a implementação de nenhum dos passos seguintes...
+2
+
+Parece ter dificuldade em acessar elementos do array... por que não levantou a dúvida na aula em que usamos arrays pela primeira vez? por que não estudou, por exemplo, nos tutoriais da w3schools que foram citados nas aulas??
+2
+
+Pelo código parece ter dificuldade com comandos de repetição e escopo de variáveis. parece compreender argumentos de funções e acesso a elementos de array. talvez as atividades dos links a seguir ajudem:
+https://www.w3schools.com/c/c_arrays_loop.php
+https://www.w3schools.com/c/c_functions_parameters.php exemplo "Pass Arrays as Function Parameters"
+https://www.w3schools.com/c/c_scope.php
+... parece ter seguido o passo a passo mas não evoluiu (no passo a passo) até onde eu esperava...
+2
+
+Bom programa, já sabe programar e seguiu o passo a passo.
+Teria um adicional pelo capricho em codificar a entrada de dados mas não há nota maior que 10...
+10
+
+Bom programa. Acho que já sabe programar, mesmo assim seguiu o passo a passo. Usou a passagem (por cópia) do parâmetro "tamanho_vetor" como iterador do loop.
+10
+
+Entregou um bubble sort com um ajuste que o torna muito específico - a variável "contador" e a iteração até 3 quando o array tem 5 elementos... é provável que exista um array de 5 elementos em que o algoritmo falha e, certamente para algum array com quantidades de elementos diferente de 5 vai falhar. 
+Não fez o passo a passo pedido;
+5
+
+Programa compila, executa e apresenta o resultado esperado para o exemplo que foi codificado.
+Quase fez o passo a passo pedido - as funções para escrever o array na tela e para buscar não estão (explícitas) no código; desconto por isso
+8
+
+Bom programa, mas não entregou a função que imprime o array na tela... 
+9.5
+
+O programa entregue não é exatamente o que foi pedido nem é um algoritmo clássico (porque os dois loops iteram em n o que não é usual) . O loop interno não marca a posição do maior elemento (ele conta quantos elementos são maiores que o i-ésimo) e o código do loop externo faz a troca - ele coloca o i-ésimo elemento na posição em que deve estar se o array estivesse ordenado... ok, isso funciona se os elementos estiverem formarem uma sequência sem "buracos". Gerando os números aleatoriamente, o array a ordenar:     int nums[] = {288	,774	,35	,6	,926	,619	,424};
+Gera o resultado: 
+Valores ordenados em ordem crescente: 
+vetor[0] = 6
+vetor[1] = 619
+vetor[2] = 288
+vetor[3] = 35
+vetor[4] = 424
+vetor[5] = 774
+vetor[6] = 926
+
+Como o algoritmo está errado e não fez o passo a passo pedido...
+3
+
+Bom programa, seguiu o passo-a-passo.
+Sobre o comprimento do array, por conta de uma peculiaridade da linguagem chamada "array to pointer decay", é preferível manter o comprimento em uma variável e passá-la como parâmetro. 
+10
+
+Sobre o programa, testei a função de busca, ela funcionou. A função de ordenação parece ser uma tentativa de bubble sort mas não faz muito sentido investir nisso já que a função de busca já funciona. Faz mais sentido escrever a função de ordenação usando a função de busca.
+Em termos de avaliação, como só a função de busca está funcionando, a nota não é muito boa...
+2
+
+
+
+
+
