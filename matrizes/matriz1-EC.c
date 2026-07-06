@@ -8,12 +8,17 @@
 #define M 3   // macro - faz substituição de texto - substitui todas as ocorrências do texto M pelo texto 5
 #define N 5
 
+// float m[M][N]; // as dimensões diferentes e de valores específicos vão nos ajudar...
+
 float m[M][N]; // as dimensões diferentes e de valores específicos vão nos ajudar...
 
 void imprime (float x[M][N]);   // protótipo - define como uma função é usada antes de definir seu funcionamento/comportamento/corpo
                                 // útil em projetos maiores onde, habitualmente, as interfaces (protótipos) são definidas em grupo, 
                                 // os comportamentos
                                 // são combinados em conversas e o trabalho é distribuído definindo quem codifica o quê.
+
+void imprimeEC(float x[M][N]);
+void imprimeL(float x[M][N]);
 
 int main() {
   for (int i=0;i<M;i++) {
@@ -22,6 +27,8 @@ int main() {
     }
   }
   imprime (m);
+  imprimeEC (m);
+  imprimeL (m);
 }
 
 void imprime (float x[M][N]) {
@@ -33,14 +40,29 @@ void imprime (float x[M][N]) {
   }
 }
 
-/*
- * Existe outro assunto importante: como usar essas matrizes para implementar
- * computacionalmente algoritmos matemáticos como calcular o determinante, 
- * fazer escalonamento (método de Gauss),...
- * ou algoritmos mais sofisticados como programação dinâmica e programação linear.
- * Para isso é interessante pensar em como percorrer a matriz (ex. imprimir os
- * elementos na diagonal de uma matriz quadrada), 
- * como calcular combinações lineares (assunto de MVGA)
- * nesse assunto, para nós, matemática e computação se encontram.
- */
+void imprimeEC(float x[M][N]) {
 
+  printf ("{%p, %p}\n", &x, x);
+  for (int i=0;i<M;i++) {
+    for (int j=0;j<N;j++) {
+      printf ("{%p, %f}\t", &(x[i][j]), x[i][j]);
+    }
+    puts("");
+  }
+}
+
+void imprimeL(float x[M][N]) {
+  printf ("{%p, %p}\n", &x, x);
+  for (int i=0;i<M;i++) {
+    printf ("{%p, %p}\t", &(x[i]), x[i]);
+    puts("");
+  }
+    puts("");
+
+  printf ("{%p, %p}\n", &m, m);
+  for (int i=0;i<M;i++) {
+    printf ("{%p, %p}\t", &(m[i]), m[i]);
+    puts("");
+  }
+
+}

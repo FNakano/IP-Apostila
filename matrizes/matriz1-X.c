@@ -10,10 +10,18 @@
 
 float m[M][N]; // as dimensões diferentes e de valores específicos vão nos ajudar...
 
+float l[M][N]; // as dimensões diferentes e de valores específicos vão nos ajudar...
+
+
 void imprime (float x[M][N]);   // protótipo - define como uma função é usada antes de definir seu funcionamento/comportamento/corpo
                                 // útil em projetos maiores onde, habitualmente, as interfaces (protótipos) são definidas em grupo, 
                                 // os comportamentos
                                 // são combinados em conversas e o trabalho é distribuído definindo quem codifica o quê.
+
+void sobrescreve ( float *x[M][N], float *y[M][N]) {
+  *x=*y;
+}
+
 
 int main() {
   for (int i=0;i<M;i++) {
@@ -21,6 +29,23 @@ int main() {
       m[i][j]= rand()/10000.0;
     }
   }
+  for (int i=0;i<M;i++) {
+    for (int j=0;j<N;j++) {
+      l[i][j]= rand()/10000.0;
+    }
+  }
+  imprime (m);
+  imprime (l);
+//  m=l;
+/*
+ * <pre><font color="#8AE234"><b>fabio@super</b></font>:<font color="#729FCF"><b>~/MeuGithub/IP-Apostila/matrizes</b></font>$ gcc matriz1-X.c 
+<b>matriz1-X.c:</b> In function ‘<b>main</b>’:
+<b>matriz1-X.c:34:4:</b> <font color="#EF2929"><b>error: </b></font>assignment to expression with array type
+   34 |   m<font color="#EF2929"><b>=</b></font>l;
+      |    <font color="#EF2929"><b>^</b></font>
+</pre>
+ * */
+  sobrescreve (&m, &l);
   imprime (m);
 }
 

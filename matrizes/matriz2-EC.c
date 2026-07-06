@@ -8,39 +8,56 @@
 #define M 3   // macro - faz substituição de texto - substitui todas as ocorrências do texto M pelo texto 5
 #define N 5
 
-float m[M][N]; // as dimensões diferentes e de valores específicos vão nos ajudar...
+float **m; // as dimensões diferentes e de valores específicos vão nos ajudar...
 
-void imprime (float x[M][N]);   // protótipo - define como uma função é usada antes de definir seu funcionamento/comportamento/corpo
+void imprime (float **x);   // protótipo - define como uma função é usada antes de definir seu funcionamento/comportamento/corpo
                                 // útil em projetos maiores onde, habitualmente, as interfaces (protótipos) são definidas em grupo, 
                                 // os comportamentos
                                 // são combinados em conversas e o trabalho é distribuído definindo quem codifica o quê.
 
+void imprimeEC(float **x);
+void imprimeL(float **x);
+
 int main() {
+  m= (float **) malloc (M*sizeof (float *));  // array de ponteiros para linhas
+  for (int i=0;i<M;i++) {
+    m[i]= (float *) malloc (N*sizeof (float));  // array de float (uma linha
+  }
   for (int i=0;i<M;i++) {
     for (int j=0;j<N;j++) {
       m[i][j]= rand()/10000.0;
     }
   }
   imprime (m);
+  imprimeEC (m);
+  imprimeL (m);
 }
 
-void imprime (float x[M][N]) {
+void imprime (float **x) {
   for (int i=0;i<M;i++) {
     for (int j=0;j<N;j++) {
-      printf ("%f\t", x[i][j]);
+      printf ("%f\t", m[i][j]);
     }
     puts("");
   }
 }
 
-/*
- * Existe outro assunto importante: como usar essas matrizes para implementar
- * computacionalmente algoritmos matemáticos como calcular o determinante, 
- * fazer escalonamento (método de Gauss),...
- * ou algoritmos mais sofisticados como programação dinâmica e programação linear.
- * Para isso é interessante pensar em como percorrer a matriz (ex. imprimir os
- * elementos na diagonal de uma matriz quadrada), 
- * como calcular combinações lineares (assunto de MVGA)
- * nesse assunto, para nós, matemática e computação se encontram.
- */
+void imprimeEC(float **x) {
 
+  printf ("{%p, %p}\n", &m, m);
+  for (int i=0;i<M;i++) {
+    for (int j=0;j<N;j++) {
+      printf ("{%p, %f}\t", &(m[i][j]), m[i][j]);
+    }
+    puts("");
+  }
+}
+
+void imprimeL(float **x) {
+
+  printf ("{%p, %p}\n", &m, m);
+  for (int i=0;i<M;i++) {
+    printf ("{%p, %p}\t", &(m[i]), m[i]);
+    puts("");
+  }
+}
