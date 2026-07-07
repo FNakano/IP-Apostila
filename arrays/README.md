@@ -118,3 +118,65 @@ Note que a diferença dos endereços de elementos consecutivos é de 4 bytes - o
 
 Arrays declarados dessa forma não podem ter seus tamanhos modificados. Seus elementos precisam ter os valores modificados um a um. Estas características limitam o uso desses arrays.
 
+## Alocação dinâmica
+
+Até onde sei, a forma mais comum de usar arrays em C é através de alocação dinâmica. Usando esse recurso os arrays podem ter suas dimensões definidas durante a execução, ser redimensionados, ter linhas trocadas com poucas operações.
+
+As funções de alocação dinâmica mais usadas são `free()`, `malloc()` e `calloc()`. As funções `realloc()` e `reallocarray()` completam a lista (veja `man malloc`).
+
+Ponteiros sem tipo especificado são usados nessas funções. Eles podem ser declarados `void *`. Desta forma `void *p` declara um ponteiro `p` que pode apontar para qualquer coisa (que o programador puder e quiser). Quando esses ponteiros são usados para calcular um novo endereço, os inteiros somados/subtraídos na expressão que define seu valor são bytes. Quando os ponteiros são tipados, por exemplo `float *pf`, os inteiros somados/subtraídos são do tamanho do tipo correspondente.
+
+Conversão explícita de tipos é feita com *type cast*. Sintaticamente é um tipo entre parêntesis dentro de uma expressão. Um comando comum quando trabalha-se com alocação dinâmica é `p=(float *) malloc (N*sizeof (float))`. Neste comando, `(float *)` é um *type cast* para ponteiro para float. Um dos efeitos disso é que se, depois dessa linha, calcularmos `p=p+1`, p vai ser incrementado pelo tamanho de um float (ié 4 bytes). Haverá programas completos nesta página logo. Com eles o contexto ficará suficientemente definido.
+
+As funções `malloc()`, `calloc()` alocam memória. As funções `realloc()` e `reallocarray()` alocam memória quando necessário. Todas essas funções retornam um endereço que pode ser armazenado em um ponteiro sem tipo especificado, ou convertido com um *type cast*. A memória alocada com essas funções é liberada para o sistema quando o programa termina. Por outro lado, considera-se que programas bem escritos alocam e liberam a memória alocada corretamente. A função que libera a memória (associada a um ponteiro) é `free()`.
+
+Segue o programa equivalente a `teste-escrever.c` mas que aloca os arrays dinamicamente (e substitui um pelo outro):
+
+```c
+/* teste-sobrescrever-dinamico.c */
+#include <stdio.h>
+#include <stdlib.h>
+
+#define N 5
+
+// float m[N];
+// float l[N];
+
+float *m;
+float *l;
+
+void imprime (float x[N]) {
+  for (int j=0;j<N;j++) {
+    printf ("%f\t", x[j]);
+  }
+  puts("");
+}
+
+
+int main() {
+
+  m=(float *) malloc (N*sizeof (float));
+  l=(float *) malloc (N*sizeof (float));
+  
+  for (int j=0;j<N;j++) { // inicializa elementos de m
+    m[j]= rand()/10000.0;
+  }
+  for (int j=0;j<N;j++) { // inicializa elementos de l
+    l[j]= rand()/10000.0;
+  }
+  imprime (m);
+  imprime (l);
+  m=l;   // se m e l fossem ponteiros, esta linha é suficiente para fazer m
+         // apontar para o mesmo conteúdo de l.
+  imprime (m);
+  free (m);
+  // free (l); // da maneira como está escrito o programa, deveria ter liberado
+               // a memória alocada para l antes, agora já não dá mais...
+               // ... não é possível, neste programa, recuperar a referência 
+               // perdida.
+}
+
+```
+
+Tente imprimir os endereços e conteúdos, como feito em ´teste-imprime.c` e veja qual a (sutil) diferença entre declarar um array estaticamente e declarar um array dinamicamente. Reproduza a idéia com as matrizes.
+
