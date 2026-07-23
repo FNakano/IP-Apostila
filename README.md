@@ -163,6 +163,10 @@ Tutoriais mostrando como construir diferentes áreas de trabalho enriqueceriam e
 - É possível usar o telefone celular no lugar do desktop/notebook na área de trabalho. O tutorial que mostra como fazer, em telefones com sistema Android, é https://github.com/FNakano/IP-Apostila/tree/main/InstalarTermux vai da instalação do app através da loja Google até a execução de um programa escrito em linguagem C.
 - Code:Blocks é um ambiente integrado de desenvolvimento que pode ser usado para escrever programas em C. Em https://www.w3schools.com/c/c_getstarted.php W3Schools ofrece alguma instrução sobre como usá-lo.  
 
+### Aplicativos Facilitadores 
+
+A uma altura da disciplina passa a ser conveniente usar diagramas que representam a memória do computador e que mostram variáveis, conteúdos, ponteiros,... Um site que apresenta esses diagramas é https://pythontutor.com/index.html
+
 ## Sequência de assuntos a abordar em aula (revisado em 2026-05-08)
 
 
